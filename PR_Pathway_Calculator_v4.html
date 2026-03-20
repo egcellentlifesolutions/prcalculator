@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Canada Immigration Guide – CRS, PNP & Citizenship Calculator</title>
-<meta name="description" content="Free Canada immigration tools. Calculate your Express Entry CRS score, PNP score, and physical presence days for citizenship. Updated 2026.">
+<title>Canada PR Score Calculator – PNP & Express Entry 2025</title>
+<meta name="description" content="Free Canada immigration score calculator. Estimate your BC PNP SIRS score and Express Entry CRS score instantly. Updated Dec 2025.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -173,9 +173,9 @@ footer a{color:#b2dfdb;}
 /* main-nav inside retainer inherits sticky from retainer */
 .main-nav{background:var(--wh);border-bottom:1px solid var(--grl);}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;}
-.nav-tab{padding:.65rem 1.25rem;font-size:.8rem;font-weight:600;color:var(--gr);cursor:pointer;border-bottom:3px solid transparent;transition:all .15s;white-space:nowrap;user-select:none;}
-.nav-tab:hover{color:var(--orange);background:#FFF3E0;}
-.nav-tab.active{color:var(--orange);border-bottom-color:var(--orange);background:#FFF8F0;}
+.nav-tab{padding:.65rem 1.1rem;font-size:.8rem;font-weight:600;color:var(--gr);cursor:pointer;border-bottom:2.5px solid transparent;transition:all .15s;white-space:nowrap;}
+.nav-tab:hover{color:var(--blk);}
+.nav-tab.active{color:var(--teal);border-bottom-color:var(--teal);}
 .nav-spacer{flex:1;}
 .nav-info{font-size:.65rem;color:var(--gr);padding:.65rem 0;}
 
@@ -190,33 +190,30 @@ footer a{color:#b2dfdb;}
 }
 
 /* ── EGCELLENT SPONSOR BANNER ── */
-.eg-banner-wrap{background:#ffffff;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;padding:.55rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:.2rem;}
-.eg-ad-label{font-size:.55rem;color:#aaa;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;max-width:1200px;width:100%;}
-.eg-banner{max-width:1200px;width:100%;display:flex;align-items:center;gap:1.25rem;text-decoration:none;color:var(--blk);padding:.35rem 0;flex-wrap:wrap;}
-.eg-banner:hover .eg-cta-pill{background:var(--teal);color:#fff;}
+.eg-banner-wrap{background:linear-gradient(135deg,#00695C 0%,#00897B 60%,#E8450A 100%);padding:.5rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:.2rem;}
+.eg-ad-label{font-size:.55rem;color:rgba(255,255,255,.5);letter-spacing:2px;text-transform:uppercase;align-self:flex-start;max-width:1200px;width:100%;}
+.eg-banner{max-width:1200px;width:100%;display:flex;align-items:center;gap:1.25rem;text-decoration:none;color:#fff;padding:.45rem 0;flex-wrap:wrap;}
+.eg-banner:hover .eg-cta-pill{background:#fff;color:var(--teal);}
 .eg-logo-area{display:flex;align-items:center;flex-shrink:0;}
-.eg-logo-img{height:48px;width:auto;max-width:200px;object-fit:contain;}
+.eg-logo-img{height:44px;width:auto;max-width:180px;object-fit:contain;filter:brightness(0) invert(1);}
 .eg-logo-fallback{display:flex;align-items:center;gap:.5rem;}
 .eg-logo-icon{background:var(--orange);color:#fff;border-radius:8px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;font-family:'Inter',sans-serif;letter-spacing:.5px;flex-shrink:0;}
 .eg-logo-text-wrap{display:flex;flex-direction:column;}
-.eg-logo-main{font-size:.95rem;font-weight:700;color:var(--blk);letter-spacing:1px;line-height:1;}
-.eg-logo-tagline{font-size:.6rem;color:var(--gr);letter-spacing:.5px;margin-top:1px;}
-.eg-divider{width:1px;height:36px;background:#ddd;flex-shrink:0;}
+.eg-logo-main{font-size:.95rem;font-weight:700;color:#fff;letter-spacing:1px;line-height:1;}
+.eg-logo-tagline{font-size:.6rem;color:rgba(255,255,255,.65);letter-spacing:.5px;margin-top:1px;}
+.eg-divider{width:1px;height:36px;background:rgba(255,255,255,.25);flex-shrink:0;}
 .eg-copy-area{flex:1;min-width:0;}
-.eg-headline{font-size:.9rem;font-weight:600;color:var(--blk);line-height:1.2;}
-.eg-sub{font-size:.68rem;color:var(--gr);margin-top:2px;}
-.eg-url{font-size:.62rem;color:var(--gr);margin-top:2px;letter-spacing:.3px;}
-.eg-cta-pill{background:transparent;border:1.5px solid var(--teal);border-radius:20px;padding:.3rem .9rem;font-size:.72rem;font-weight:600;color:var(--teal);white-space:nowrap;transition:all .15s;flex-shrink:0;}
+.eg-headline{font-size:.9rem;font-weight:600;color:#fff;line-height:1.2;}
+.eg-sub{font-size:.68rem;color:rgba(255,255,255,.65);margin-top:2px;}
+.eg-url{font-size:.62rem;color:rgba(255,255,255,.5);margin-top:2px;letter-spacing:.3px;}
+.eg-cta-pill{background:rgba(255,255,255,.18);border:1.5px solid rgba(255,255,255,.45);border-radius:20px;padding:.3rem .9rem;font-size:.72rem;font-weight:600;color:#fff;white-space:nowrap;transition:all .15s;flex-shrink:0;}
 @media(max-width:640px){
   .eg-divider{display:none;}
   .eg-headline{font-size:.82rem;}
   .eg-sub{display:none;}
-  .eg-logo-img{height:36px;}
+  .eg-logo-img{height:34px;}
   .eg-cta-pill{padding:.25rem .7rem;font-size:.66rem;}
 }
-
-/* ── THANK YOU BAR ── */
-.thankyou-bar{background:#E0F2F1;border-bottom:1px solid #B2DFDB;text-align:center;padding:.45rem 1.5rem;font-size:.76rem;color:#004D40;font-weight:500;letter-spacing:.2px;}
 
 /* ── HEADER EGCELLENT LOGO ── */
 .hdr-eg{display:flex;flex-direction:column;align-items:center;gap:1px;}
@@ -246,8 +243,8 @@ footer a{color:#b2dfdb;}
     <div class="logo">
       <div class="logo-icon"><svg viewBox="0 0 32 22" xmlns="http://www.w3.org/2000/svg" width="32" height="22"><rect width="32" height="22" fill="#fff"/><rect width="8" height="22" fill="#FF0000"/><rect x="24" width="8" height="22" fill="#FF0000"/><polygon points="16,3 17.2,7.5 21.5,6.5 18.5,9.5 21,12 16.8,11.2 16,15 15.2,11.2 11,12 13.5,9.5 10.5,6.5 14.8,7.5" fill="#FF0000"/></svg></div>
       <div>
-        <div class="logo-text">Canada Immigration Guide</div>
-        <div class="logo-sub">CRS · PNP · Citizenship Calculator</div>
+        <div class="logo-text">CanadaPR.Guide</div>
+        <div class="logo-sub">Immigration Score Calculator</div>
       </div>
     </div>
     <!-- Egcellent logo in header -->
@@ -284,7 +281,6 @@ footer a{color:#b2dfdb;}
     </div>
     <div class="eg-divider"></div>
     <div class="eg-copy-area">
-      <div class="eg-headline">Your Canadian Life Solutions Partner</div>
       <div class="eg-url">egcellentlifesolutions.com</div>
     </div>
     <div class="eg-cta-pill">Visit Us ↗</div>
@@ -304,16 +300,12 @@ footer a{color:#b2dfdb;}
       <div class="disc-title">Independent estimation tool only — figures shown are <em>approximate guides</em>, not official scores. Your actual result may differ based on documentation, officer discretion, and program changes. Use this as a <strong>starting point</strong> to gauge your chances before speaking with a licensed RCIC. <span id="disc-updated"></span></div>
     </div>
   </div>
-  <!-- THANK YOU BAR -->
-  <div class="thankyou-bar">🍁 Thank you for visiting — we hope this helps you on your Canadian dream journey. Cheers!</div>
 
   <!-- NAV TABS -->
   <div class="main-nav">
     <div class="nav-inner">
-      <div class="nav-tab active" onclick="switchTop('ee')">🇨🇦 Express Entry (CRS)</div>
-      <div class="nav-tab" onclick="switchTop('pnp')">🏅 Provincial Nominee (PNP)</div>
-      <div class="nav-tab" onclick="switchTop('pp')">📅 Citizenship - Physical Presence</div>
-      <div class="nav-tab" onclick="switchTop('contact')">📬 Contact Us</div>
+      <div class="nav-tab active" onclick="switchTop('pnp')">🏅 Provincial Nominee (PNP)</div>
+      <div class="nav-tab" onclick="switchTop('ee')">🇨🇦 Express Entry (CRS)</div>
       <div class="nav-spacer"></div>
       <div class="nav-info">Updated <span id="dynamic-updated-date"></span></div>
     </div>
@@ -322,7 +314,7 @@ footer a{color:#b2dfdb;}
 </div>
 
 <!-- ══════════════════ PNP PANEL ══════════════════ -->
-<div id="panel-pnp" class="calc-panel">
+<div id="panel-pnp" class="calc-panel active">
 <div class="purpose-bar purpose-pnp">
   <strong>Purpose:</strong> Get a general idea of where your PNP profile stands before consulting a licensed RCIC.
   Always verify your actual score on the <a id="pnp-official-link" href="#" target="_blank">province's official website ↗</a>.
@@ -409,7 +401,7 @@ footer a{color:#b2dfdb;}
 </div>
 
 <!-- ══════════════════ EE PANEL ══════════════════ -->
-<div id="panel-ee" class="calc-panel active">
+<div id="panel-ee" class="calc-panel">
 <div class="purpose-bar purpose-ee">
   <strong>Purpose:</strong> Get a general idea of where your Express Entry CRS profile stands before consulting a licensed RCIC.
   Always verify your actual score on the province's official website.
@@ -449,7 +441,7 @@ footer a{color:#b2dfdb;}
     <div class="thresh-card">
       <h3>🍁 2026 Draw Reference</h3>
       <div class="thresh-val">500–560 pts</div>
-      <div class="thresh-note">General draws: ~524+ (Feb 2026). Category draws (French, healthcare, trades): ~400–470. PNP nomination adds +600 pts instantly.<br><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html" target="_blank" style="color:var(--teal);font-weight:600;">View all past draw results ↗</a></div>
+      <div class="thresh-note">General draws: ~524+ (Feb 2026). Category draws (French, healthcare, trades): ~400–470. PNP nomination adds +600 pts instantly.</div>
     </div>
     <div class="ad-card">
       <span class="ad-card-label">Sponsored</span>
@@ -470,147 +462,13 @@ footer a{color:#b2dfdb;}
 </div>
 </div>
 
-<!-- ══ PHYSICAL PRESENCE PANEL ══ -->
-<div id="panel-pp" class="calc-panel">
-<div class="purpose-bar purpose-ee">
-  <strong>Purpose:</strong> Calculate how many days you've been physically present in Canada to check eligibility for citizenship. Need <strong>1,095 days</strong> in the 5 years before you apply.
-  Always verify with the <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/adult-minor/how.html" target="_blank">official IRCC website ↗ for citizenship.</a>
-</div>
-<div class="page">
-  <div class="left-col">
-    <div class="ee-hdr">
-      <h2>📅 Citizenship - Physical Presence Calculator — Canadian Citizenship</h2>
-      <p>Based on the Citizenship Act. You need <strong>1,095 days</strong> in the 5 years immediately before your application date. Departure and return days both count as presence.</p>
-    </div>
-
-    <!-- Step 1: Application date -->
-    <div style="background:var(--wh);border:1px solid var(--grl);border-top:none;border-radius:0 0 10px 10px;padding:.9rem .95rem;">
-      <div class="grp-lbl" style="margin:0 -.95rem 0;border-radius:0;">Step 1 — Your Details</div>
-
-      <div class="cr-row">
-        <div><div class="cr-lbl">Application date (or today)</div><div class="cr-desc">The date you plan to sign/submit your citizenship application. The 5-year window ends the day BEFORE this date.</div></div>
-        <div class="cr-ctrl"><input type="date" id="pp-app-date" style="width:146px;padding:.26rem .42rem;border:1.5px solid var(--grl);border-radius:6px;font-family:'Inter',sans-serif;font-size:.71rem;background:var(--off);" onchange="calcPP()"></div>
-      </div>
-
-      <div class="cr-row">
-        <div><div class="cr-lbl">PR Landing date</div><div class="cr-desc">The date you first became a Permanent Resident of Canada.</div></div>
-        <div class="cr-ctrl"><input type="date" id="pp-pr-date" style="width:146px;padding:.26rem .42rem;border:1.5px solid var(--grl);border-radius:6px;font-family:'Inter',sans-serif;font-size:.71rem;background:var(--off);" onchange="calcPP()"></div>
-      </div>
-
-      <div class="grp-lbl" style="margin:1rem -.95rem 0;border-radius:0;">Step 2 — Time in Canada Before PR <span style="font-size:.6rem;opacity:.7;font-weight:400;">(optional — counts as ½ day, max 365 days)</span></div>
-      <div class="cr-row">
-        <div><div class="cr-lbl">Days in Canada as Temporary Resident</div><div class="cr-desc">Total days physically in Canada as a visitor, student, or worker BEFORE your PR landing date, within the 5-year window. Each day = 0.5 days toward the 1,095 requirement (max 365 days credit).</div></div>
-        <div class="cr-ctrl">
-          <input type="number" id="pp-temp-days" min="0" max="1826" value="0" style="width:146px;padding:.26rem .42rem;border:1.5px solid var(--grl);border-radius:6px;font-family:'Inter',sans-serif;font-size:.71rem;background:var(--off);" oninput="calcPP()">
-          <span class="bdg z" id="pp-temp-credit">0 days credit</span>
-        </div>
-      </div>
-
-      <div class="grp-lbl" style="margin:1rem -.95rem 0;border-radius:0;">Step 3 — Absences from Canada (since PR landing)</div>
-      <div style="font-size:.68rem;color:var(--gr);padding:.35rem 0 .5rem;line-height:1.6;">
-        Add each trip outside Canada since you became a PR. <strong>Departure and return days are NOT counted as absences</strong> — both count as presence days. Only the days in between count as absent.
-      </div>
-      <div id="pp-absences"></div>
-      <button onclick="ppAddTrip()" style="margin-top:.5rem;background:var(--teal-lt);border:1.5px solid var(--teal);color:var(--teal2);border-radius:7px;padding:.35rem .8rem;font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;cursor:pointer;">+ Add Absence / Trip Outside Canada</button>
-    </div>
-  </div>
-
-  <!-- RIGHT: Results -->
-  <div class="right-col">
-    <div class="stbl-wrap">
-      <div class="stbl-hdr">📋 Physical Presence Summary <span class="score-pill" id="pp-pill">0</span></div>
-      <table class="stbl">
-        <thead><tr><th>Factor</th><th>Days</th></tr></thead>
-        <tbody id="pp-tbody">
-          <tr><td colspan="2" style="text-align:center;color:var(--gr);font-style:italic;padding:.8rem;">Enter your details to calculate</td></tr>
-        </tbody>
-        <tfoot>
-          <tr class="tot-r"><td>Total Physical Presence</td><td id="pp-grand">0</td></tr>
-        </tfoot>
-      </table>
-    </div>
-
-    <!-- Eligibility card -->
-    <div class="thresh-card" id="pp-result-card">
-      <h3>🍁 Citizenship Eligibility</h3>
-      <div class="thresh-val" id="pp-status" style="font-size:1rem;">—</div>
-      <div class="thresh-note" id="pp-note">Enter your application date and PR landing date to begin.</div>
-    </div>
-
-    <!-- Progress bar card -->
-    <div style="background:var(--wh);border-radius:10px;border:1px solid var(--grl);padding:.85rem .9rem;">
-      <div style="font-size:.65rem;font-weight:600;color:var(--gr);text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem;">Progress to 1,095 Days</div>
-      <div style="background:var(--grl);border-radius:20px;height:12px;overflow:hidden;">
-        <div id="pp-bar" style="background:var(--teal);height:100%;width:0%;border-radius:20px;transition:width .4s;"></div>
-      </div>
-      <div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--gr);margin-top:.3rem;">
-        <span id="pp-bar-label">0 / 1,095 days</span>
-        <span id="pp-bar-pct">0%</span>
-      </div>
-    </div>
-
-    <div style="background:var(--teal-lt);border:1px solid var(--grl);border-radius:10px;padding:.75rem .9rem;font-size:.67rem;color:#004D40;line-height:1.7;">
-      <strong>Key Rules:</strong><br>
-      ✓ Need 1,095 days in the 5 years before application<br>
-      ✓ Departure &amp; return days = presence (not absence)<br>
-      ✓ Pre-PR days in Canada = ½ credit (max 365 days)<br>
-      ✓ Must have at least 1,095 days as PR (cannot be all pre-PR days)<br>
-      ✓ Always apply with a buffer above 1,095 days<br>
-      <a href="https://www.canada.ca/en.html" target="_blank" style="color:var(--teal2);font-weight:600;">Use official IRCC calculator to confirm ↗</a>
-    </div>
-
-    <button class="reset-btn" onclick="ppReset()">↺ Reset Calculator</button>
-  </div>
-</div>
-</div>
-
-<!-- ══ CONTACT US PANEL ══ -->
-<div id="panel-contact" class="calc-panel">
-<div style="max-width:1200px;margin:1.5rem auto;padding:0 1.5rem;">
-  <div class="ee-hdr" style="border-radius:10px 10px 0 0;">
-    <h2>📬 Contact Us</h2>
-    <p>We'd love to hear from you — reach out anytime!</p>
-  </div>
-  <div style="background:var(--wh);border:1px solid var(--grl);border-top:none;border-radius:0 0 10px 10px;padding:2rem 1.5rem;display:flex;flex-direction:column;gap:1.25rem;">
-
-    <!-- Email card -->
-    <div style="display:flex;align-items:center;gap:1rem;background:var(--teal-lt);border:1px solid #80CBC4;border-radius:10px;padding:1rem 1.25rem;">
-      <div style="font-size:2rem;flex-shrink:0;">✉️</div>
-      <div>
-        <div style="font-size:.78rem;font-weight:700;color:var(--teal2);margin-bottom:.2rem;">Email Us</div>
-        <a href="mailto:team@egcellentlifesolutions.com" style="font-size:.9rem;font-weight:600;color:var(--teal2);text-decoration:underline;">team@egcellentlifesolutions.com</a>
-      </div>
-    </div>
-
-    <!-- Website card -->
-    <div style="display:flex;align-items:center;gap:1rem;background:#FFF3E0;border:1px solid #FFB74D;border-radius:10px;padding:1rem 1.25rem;">
-      <div style="font-size:2rem;flex-shrink:0;">🌐</div>
-      <div>
-        <div style="font-size:.78rem;font-weight:700;color:var(--orange);margin-bottom:.2rem;">Visit Our Website</div>
-        <a href="https://www.egcellentlifesolutions.com" target="_blank" style="font-size:.9rem;font-weight:600;color:var(--orange);text-decoration:underline;">www.egcellentlifesolutions.com</a>
-      </div>
-    </div>
-
-    <!-- Contact page link -->
-    <div style="text-align:center;padding:.5rem 0;">
-      <a href="https://egcellentlifesolutions.com/pages/contact" target="_blank"
-         style="display:inline-block;background:var(--teal);color:#fff;border-radius:8px;padding:.55rem 1.5rem;font-size:.82rem;font-weight:600;text-decoration:none;transition:background .15s;"
-         onmouseover="this.style.background='var(--teal2)'" onmouseout="this.style.background='var(--teal)'">
-        Open Contact Page ↗
-      </a>
-    </div>
-
-  </div>
-</div>
-</div>
-
 <!-- FOOTER -->
 <footer>
   <strong>CanadaPR.Guide</strong> is an independent, privately operated tool. &nbsp;|&nbsp;
-  <strong>Not affiliated with IRCC, PNP, or any government body.</strong> &nbsp;|&nbsp;
+  <strong>Not affiliated with IRCC, BC PNP, or any government body.</strong> &nbsp;|&nbsp;
   Scores are estimates for informational purposes only. &nbsp;|&nbsp;
   Always consult a licensed RCIC or official provincial websites. &nbsp;|&nbsp;
-  &nbsp;·&nbsp;
+  <a href="https://www.welcomebc.ca/immigrate-to-b-c/skills-immigration" target="_blank">Official BC PNP ↗</a> &nbsp;·&nbsp;
   <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html" target="_blank">Official Express Entry ↗</a>
   <br>© <span id="dynamic-year"></span> CanadaPR.Guide · Privacy Policy · Terms of Use · Advertising Disclosure
   <br><span style="font-size:.6rem;opacity:.6;">Advertising on this site is clearly labelled "Sponsored" or "Advertisement". We may earn a referral fee from partner links. This does not influence the accuracy of score calculations.</span>
@@ -842,8 +700,8 @@ function buildEE(){
  // C. Skill Transferability
  h+=eH('C. Skill Transferability','IRCC calculates this automatically from your education, language, and work experience. Maximum 100 pts total.');
  h+=`<div style="font-size:.68rem;color:#004D40;background:#E0F2F1;border-left:3px solid var(--teal);padding:.5rem .7rem;margin:.4rem 0 .4rem;line-height:1.6;">
-  Fill in the fields below — points calculate automatically.<br>
-  <strong>Note:</strong> IRCC counts CWE in <strong>complete years only</strong> (e.g. 1.83 yrs = 1 year, 3.6 yrs = 3 years).
+  Just fill in the 4 fields below — points calculate automatically.<br>
+  <strong>Tip:</strong> For Skilled CWE, only count years in TEER 0–3 jobs in Canada. If you have multiple jobs, only count the one(s) matching your <strong>primary NOC</strong> for the ST Education combo.
  </div>`;
 
  h+=eR('st_edu_level','Education Level (Language combo)','Your highest credential anywhere. Foreign degrees count here.',
@@ -852,7 +710,7 @@ function buildEE(){
    ['2+ yr / Bachelor\'s / Master\'s / PhD','2_edu']]);
 
  h+=eR('st_edu_cwe_level','Education Level (Canadian Work Exp combo)',
-  'Select the credential level that your Canadian employer required for your job — not necessarily your highest degree. For most TEER 2–3 jobs, this is typically "1 year or more post-secondary."',
+  'Use the credential you were <em>working toward or using</em> during your Canadian work. If your Canadian job required only a diploma/cert (not your full degree), select that level. If unsure and your ST Edu score seems off by 12 pts, try "1-yr post-sec" here.',
   [['Less than post-secondary / none','0_edu'],
    ['Post-secondary 1 year or more (diploma, cert, trades)','1_edu'],
    ['2+ yr / Bachelor\'s / Master\'s / PhD','2_edu']]);
@@ -862,11 +720,10 @@ function buildEE(){
    ['CLB 7 or 8 on all abilities (at least one under CLB 9)','7_lang'],
    ['CLB 9 or more on ALL four abilities','9_lang']]);
 
- h+=eR('st_skilled_cwe','Skilled Canadian Work Exp — TEER 0–3',
-  'IRCC counts only <strong>complete 12-month periods</strong> (floor). Example: 1.83 years = 1 year. 3.6 calendar years may = 3 work-years depending on hours. Count only TEER 0–3 work in Canada.',
-  [['None / less than 1 full year','0_cwe'],
-   ['1 full year (1.0–1.99 yrs)','1_cwe'],
-   ['2 or more full years','2_cwe']]);
+ h+=eR('st_skilled_cwe','Skilled Canadian Work Exp — TEER 0–3','Total TEER 0–3 years in Canada. Count all employers.',
+  [['None / less than 1 year','0_cwe'],
+   ['1 year (1.0–1.99 yrs)','1_cwe'],
+   ['2 or more years','2_cwe']]);
 
  h+=eR('st_fwe_years','Foreign Work Experience — TEER 0–3','Count all your skilled work outside Canada.',
   [['None','0_fwe'],
@@ -1175,11 +1032,9 @@ function calcPNP(){
 }
 
 function switchTop(t){
- document.querySelectorAll('.nav-tab').forEach((el,i)=>el.classList.toggle('active',['ee','pnp','pp','contact'][i]===t));
+ document.querySelectorAll('.nav-tab').forEach((el,i)=>el.classList.toggle('active',['pnp','ee'][i]===t));
  $('panel-pnp').classList.toggle('active',t==='pnp');
  $('panel-ee').classList.toggle('active',t==='ee');
- $('panel-pp').classList.toggle('active',t==='pp');
- $('panel-contact').classList.toggle('active',t==='contact');
 }
 
 function swP(i){
@@ -1201,130 +1056,7 @@ function resetCalc(pfx){
  }
 }
 
-buildStrip(); renderPNP(); buildEE();
-
-/* ══ PHYSICAL PRESENCE CALCULATOR ══ */
-let ppTrips=[],ppTripId=0;
-
-function ppAddTrip(){
- ppTrips.push({id:++ppTripId,dep:'',ret:''});
- ppRenderTrips();
-}
-function ppRemoveTrip(id){
- ppTrips=ppTrips.filter(t=>t.id!==id);
- ppRenderTrips();calcPP();
-}
-function ppSetDep(id,v){const t=ppTrips.find(x=>x.id===id);if(t){t.dep=v;calcPP();}}
-function ppSetRet(id,v){const t=ppTrips.find(x=>x.id===id);if(t){t.ret=v;calcPP();}}
-
-function ppRenderTrips(){
- let h='';
- ppTrips.forEach((t,i)=>{
-  const n=i+1;
-  h+='<div style="display:grid;grid-template-columns:1fr 1fr auto;gap:.4rem;align-items:end;padding:.45rem 0;border-bottom:1px solid var(--grl);">'
-   +'<div><div class="cr-desc" style="margin-bottom:3px;">Trip '+n+' — Left Canada</div>'
-   +'<input type="date" value="'+t.dep+'" style="width:100%;padding:.26rem .42rem;border:1.5px solid var(--grl);border-radius:6px;font-family:Inter,sans-serif;font-size:.71rem;background:var(--off);"'
-   +' onchange="ppSetDep('+t.id+',this.value)"></div>'
-   +'<div><div class="cr-desc" style="margin-bottom:3px;">Returned to Canada</div>'
-   +'<input type="date" value="'+t.ret+'" style="width:100%;padding:.26rem .42rem;border:1.5px solid var(--grl);border-radius:6px;font-family:Inter,sans-serif;font-size:.71rem;background:var(--off);"'
-   +' onchange="ppSetRet('+t.id+',this.value)"></div>'
-   +'<button onclick="ppRemoveTrip('+t.id+')" style="background:#FEF2F2;border:1px solid #FECACA;color:#DC2626;border-radius:6px;padding:.3rem .55rem;font-size:.75rem;cursor:pointer;margin-bottom:1px;">&#10005;</button>'
-   +'</div>';
- });
- if(!ppTrips.length) h='<div style="font-size:.68rem;color:var(--gr);padding:.4rem 0;font-style:italic;">No absences added yet. Click &quot;+ Add Absence&quot; below to record each trip outside Canada.</div>';
- document.getElementById('pp-absences').innerHTML=h;
-}
-function calcPP(){
- const appStr=$('pp-app-date').value;
- const prStr=$('pp-pr-date').value;
- const tempRaw=Math.min(parseInt($('pp-temp-days').value)||0,730);
- const tempCredit=Math.min(Math.floor(tempRaw*0.5),365);
- const tcb=$('pp-temp-credit');
- if(tcb){tcb.textContent=tempCredit+' days credit';tcb.className=tempCredit>0?'bdg':'bdg z';}
- const tbody=$('pp-tbody');
- if(!appStr||!prStr){
-  if(tbody) tbody.innerHTML='<tr><td colspan="2" style="text-align:center;color:var(--gr);font-style:italic;padding:.8rem;">Enter your application date and PR landing date above.</td></tr>';
-  return;
- }
- // Parse dates locally (no timezone shift)
- const toD=s=>{const[y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d);};
- const diff=(a,b)=>Math.round((b-a)/86400000);
- const app=toD(appStr),pr=toD(prStr);
- const winStart=new Date(app);winStart.setFullYear(winStart.getFullYear()-5);
- const winEnd=new Date(app);winEnd.setDate(winEnd.getDate()-1);
- if(pr>winEnd){
-  if(tbody) tbody.innerHTML='<tr><td colspan="2" style="color:var(--orange);padding:.6rem;">PR landing date is after the application date. Please check your dates.</td></tr>';
-  return;
- }
- const prWinStart=pr>winStart?pr:winStart;
- const prDaysInWindow=diff(prWinStart,winEnd)+1;
- // Process absences
- let absTotal=0,absRows='',absWarn='';
- ppTrips.forEach((t,i)=>{
-  const n=i+1;
-  if(!t.dep||!t.ret){absWarn+='<tr><td style="color:var(--orange);">Trip '+n+': incomplete dates — skipped</td><td>—</td></tr>';return;}
-  const dep=toD(t.dep),ret=toD(t.ret);
-  if(ret<=dep){absWarn+='<tr><td style="color:var(--orange);">Trip '+n+': return must be after departure</td><td>—</td></tr>';return;}
-  // Absent = days strictly BETWEEN dep and ret
-  // Departure day and return day both count as presence in Canada
-  const absFrom=new Date(dep);absFrom.setDate(absFrom.getDate()+1);
-  const absTo=new Date(ret);absTo.setDate(absTo.getDate()-1);
-  if(absTo<absFrom){
-   absRows+='<tr><td>Trip '+n+': '+t.dep+' → '+t.ret+'</td><td style="color:var(--gr);">0 days (overnight trip)</td></tr>';
-   return;
-  }
-  // Clip to 5-year window and post-PR dates only
-  const cf=absFrom<pr?pr:absFrom<winStart?winStart:absFrom;
-  const ct=absTo>winEnd?winEnd:absTo;
-  if(ct<cf){
-   absRows+='<tr><td>Trip '+n+': '+t.dep+' → '+t.ret+'</td><td style="color:var(--gr);">0 days (outside 5-yr window)</td></tr>';
-   return;
-  }
-  const cd=diff(cf,ct)+1;
-  absTotal+=cd;
-  absRows+='<tr><td>Trip '+n+': '+t.dep+' → '+t.ret+'</td><td style="color:#DC2626;">−'+cd+'</td></tr>';
- });
- // Physical presence = PR days in window MINUS absence days
- const prPresence=Math.max(0,prDaysInWindow-absTotal);
- // Total = PR presence + pre-PR temp resident credit
- const total=prPresence+tempCredit;
- const needed=1095,shortfall=Math.max(0,needed-total);
- const pct=Math.min(100,Math.round(total/needed*100));
- const fmtD=d=>d.toLocaleDateString('en-CA',{year:'numeric',month:'short',day:'numeric'});
- let rows='<tr class="grp-r"><td>5-year window</td><td>'+fmtD(winStart)+' → '+fmtD(winEnd)+'</td></tr>';
- rows+='<tr><td>Days as PR in 5-year window</td><td>'+prDaysInWindow+'</td></tr>';
- if(absTotal>0||absRows||absWarn){
-  rows+='<tr class="grp-r"><td>Absences from Canada</td><td></td></tr>'+absRows+absWarn;
-  rows+='<tr><td><strong>PR presence (absences deducted)</strong></td><td><strong>'+prPresence+'</strong></td></tr>';
- } else {
-  rows+='<tr><td>Absences</td><td style="color:var(--teal);">None — fully present</td></tr>';
-  rows+='<tr><td><strong>PR presence days</strong></td><td><strong>'+prPresence+'</strong></td></tr>';
- }
- if(tempCredit>0) rows+='<tr><td>Pre-PR temp resident credit (½ × '+tempRaw+' days, max 365)</td><td style="color:var(--teal);">+'+tempCredit+'</td></tr>';
- rows+='<tr><td>Citizenship requirement</td><td>1,095 days</td></tr>';
- if(tbody) tbody.innerHTML=rows;
- $('pp-grand').textContent=total;
- $('pp-pill').textContent=total;
- const bar=$('pp-bar'),bl=$('pp-bar-label'),bp=$('pp-bar-pct');
- if(bar){bar.style.width=pct+'%';bar.style.background=total>=needed?'var(--teal)':total>=800?'var(--orange)':'#EF4444';}
- if(bl) bl.textContent=total+' / '+needed+' days';
- if(bp) bp.textContent=pct+'%';
- const st=$('pp-status'),nt=$('pp-note');
- if(total>=needed){
-  if(st){st.textContent='✅ Eligible to Apply';st.style.color='var(--teal)';}
-  if(nt) nt.textContent='You meet the 1,095-day requirement with '+(total-needed)+' day'+(total-needed===1?'':'s')+' to spare. Always apply with a buffer above the minimum.';
- } else {
-  const eligDate=new Date(app);eligDate.setDate(eligDate.getDate()+shortfall);
-  if(st){st.textContent='⏳ '+shortfall+' more day'+(shortfall===1?'':'s')+' needed';st.style.color='var(--orange)';}
-  if(nt) nt.textContent='You need '+shortfall+' more day'+(shortfall===1?'':'s')+'. If you stay continuously, estimated eligible around '+eligDate.toLocaleDateString('en-CA',{year:'numeric',month:'long',day:'numeric'})+'.';
- }
-}
-function ppReset(){
- $('pp-app-date').value=new Date().toISOString().split('T')[0];
- $('pp-pr-date').value='';$('pp-temp-days').value='0';
- ppTrips=[];ppTripId=0;ppRenderTrips();calcPP();
-}
-(function(){$('pp-app-date').value=new Date().toISOString().split('T')[0];ppRenderTrips();})();
+buildStrip();renderPNP();buildEE();
 
 // ── DYNAMIC DATES ──
 (function(){

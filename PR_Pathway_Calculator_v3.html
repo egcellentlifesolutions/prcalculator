@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Canada Immigration Guide – CRS, PNP & Citizenship Calculator</title>
-<meta name="description" content="Free Canada immigration tools. Calculate your Express Entry CRS score, PNP score, and physical presence days for citizenship. Updated 2026.">
+<title>Canada PR Score Calculator – PNP & Express Entry 2025</title>
+<meta name="description" content="Free Canada immigration score calculator. Estimate your BC PNP SIRS score and Express Entry CRS score instantly. Updated Dec 2025.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -173,9 +173,9 @@ footer a{color:#b2dfdb;}
 /* main-nav inside retainer inherits sticky from retainer */
 .main-nav{background:var(--wh);border-bottom:1px solid var(--grl);}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;}
-.nav-tab{padding:.65rem 1.25rem;font-size:.8rem;font-weight:600;color:var(--gr);cursor:pointer;border-bottom:3px solid transparent;transition:all .15s;white-space:nowrap;user-select:none;}
-.nav-tab:hover{color:var(--orange);background:#FFF3E0;}
-.nav-tab.active{color:var(--orange);border-bottom-color:var(--orange);background:#FFF8F0;}
+.nav-tab{padding:.65rem 1.1rem;font-size:.8rem;font-weight:600;color:var(--gr);cursor:pointer;border-bottom:2.5px solid transparent;transition:all .15s;white-space:nowrap;}
+.nav-tab:hover{color:var(--blk);}
+.nav-tab.active{color:var(--teal);border-bottom-color:var(--teal);}
 .nav-spacer{flex:1;}
 .nav-info{font-size:.65rem;color:var(--gr);padding:.65rem 0;}
 
@@ -190,33 +190,30 @@ footer a{color:#b2dfdb;}
 }
 
 /* ── EGCELLENT SPONSOR BANNER ── */
-.eg-banner-wrap{background:#ffffff;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;padding:.55rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:.2rem;}
-.eg-ad-label{font-size:.55rem;color:#aaa;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;max-width:1200px;width:100%;}
-.eg-banner{max-width:1200px;width:100%;display:flex;align-items:center;gap:1.25rem;text-decoration:none;color:var(--blk);padding:.35rem 0;flex-wrap:wrap;}
-.eg-banner:hover .eg-cta-pill{background:var(--teal);color:#fff;}
+.eg-banner-wrap{background:linear-gradient(135deg,#00695C 0%,#00897B 60%,#E8450A 100%);padding:.5rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:.2rem;}
+.eg-ad-label{font-size:.55rem;color:rgba(255,255,255,.5);letter-spacing:2px;text-transform:uppercase;align-self:flex-start;max-width:1200px;width:100%;}
+.eg-banner{max-width:1200px;width:100%;display:flex;align-items:center;gap:1.25rem;text-decoration:none;color:#fff;padding:.45rem 0;flex-wrap:wrap;}
+.eg-banner:hover .eg-cta-pill{background:#fff;color:var(--teal);}
 .eg-logo-area{display:flex;align-items:center;flex-shrink:0;}
-.eg-logo-img{height:48px;width:auto;max-width:200px;object-fit:contain;}
+.eg-logo-img{height:44px;width:auto;max-width:180px;object-fit:contain;filter:brightness(0) invert(1);}
 .eg-logo-fallback{display:flex;align-items:center;gap:.5rem;}
 .eg-logo-icon{background:var(--orange);color:#fff;border-radius:8px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;font-family:'Inter',sans-serif;letter-spacing:.5px;flex-shrink:0;}
 .eg-logo-text-wrap{display:flex;flex-direction:column;}
-.eg-logo-main{font-size:.95rem;font-weight:700;color:var(--blk);letter-spacing:1px;line-height:1;}
-.eg-logo-tagline{font-size:.6rem;color:var(--gr);letter-spacing:.5px;margin-top:1px;}
-.eg-divider{width:1px;height:36px;background:#ddd;flex-shrink:0;}
+.eg-logo-main{font-size:.95rem;font-weight:700;color:#fff;letter-spacing:1px;line-height:1;}
+.eg-logo-tagline{font-size:.6rem;color:rgba(255,255,255,.65);letter-spacing:.5px;margin-top:1px;}
+.eg-divider{width:1px;height:36px;background:rgba(255,255,255,.25);flex-shrink:0;}
 .eg-copy-area{flex:1;min-width:0;}
-.eg-headline{font-size:.9rem;font-weight:600;color:var(--blk);line-height:1.2;}
-.eg-sub{font-size:.68rem;color:var(--gr);margin-top:2px;}
-.eg-url{font-size:.62rem;color:var(--gr);margin-top:2px;letter-spacing:.3px;}
-.eg-cta-pill{background:transparent;border:1.5px solid var(--teal);border-radius:20px;padding:.3rem .9rem;font-size:.72rem;font-weight:600;color:var(--teal);white-space:nowrap;transition:all .15s;flex-shrink:0;}
+.eg-headline{font-size:.9rem;font-weight:600;color:#fff;line-height:1.2;}
+.eg-sub{font-size:.68rem;color:rgba(255,255,255,.65);margin-top:2px;}
+.eg-url{font-size:.62rem;color:rgba(255,255,255,.5);margin-top:2px;letter-spacing:.3px;}
+.eg-cta-pill{background:rgba(255,255,255,.18);border:1.5px solid rgba(255,255,255,.45);border-radius:20px;padding:.3rem .9rem;font-size:.72rem;font-weight:600;color:#fff;white-space:nowrap;transition:all .15s;flex-shrink:0;}
 @media(max-width:640px){
   .eg-divider{display:none;}
   .eg-headline{font-size:.82rem;}
   .eg-sub{display:none;}
-  .eg-logo-img{height:36px;}
+  .eg-logo-img{height:34px;}
   .eg-cta-pill{padding:.25rem .7rem;font-size:.66rem;}
 }
-
-/* ── THANK YOU BAR ── */
-.thankyou-bar{background:#E0F2F1;border-bottom:1px solid #B2DFDB;text-align:center;padding:.45rem 1.5rem;font-size:.76rem;color:#004D40;font-weight:500;letter-spacing:.2px;}
 
 /* ── HEADER EGCELLENT LOGO ── */
 .hdr-eg{display:flex;flex-direction:column;align-items:center;gap:1px;}
@@ -246,8 +243,8 @@ footer a{color:#b2dfdb;}
     <div class="logo">
       <div class="logo-icon"><svg viewBox="0 0 32 22" xmlns="http://www.w3.org/2000/svg" width="32" height="22"><rect width="32" height="22" fill="#fff"/><rect width="8" height="22" fill="#FF0000"/><rect x="24" width="8" height="22" fill="#FF0000"/><polygon points="16,3 17.2,7.5 21.5,6.5 18.5,9.5 21,12 16.8,11.2 16,15 15.2,11.2 11,12 13.5,9.5 10.5,6.5 14.8,7.5" fill="#FF0000"/></svg></div>
       <div>
-        <div class="logo-text">Canada Immigration Guide</div>
-        <div class="logo-sub">CRS · PNP · Citizenship Calculator</div>
+        <div class="logo-text">CanadaPR.Guide</div>
+        <div class="logo-sub">Immigration Score Calculator</div>
       </div>
     </div>
     <!-- Egcellent logo in header -->
@@ -284,7 +281,6 @@ footer a{color:#b2dfdb;}
     </div>
     <div class="eg-divider"></div>
     <div class="eg-copy-area">
-      <div class="eg-headline">Your Canadian Life Solutions Partner</div>
       <div class="eg-url">egcellentlifesolutions.com</div>
     </div>
     <div class="eg-cta-pill">Visit Us ↗</div>
@@ -304,16 +300,12 @@ footer a{color:#b2dfdb;}
       <div class="disc-title">Independent estimation tool only — figures shown are <em>approximate guides</em>, not official scores. Your actual result may differ based on documentation, officer discretion, and program changes. Use this as a <strong>starting point</strong> to gauge your chances before speaking with a licensed RCIC. <span id="disc-updated"></span></div>
     </div>
   </div>
-  <!-- THANK YOU BAR -->
-  <div class="thankyou-bar">🍁 Thank you for visiting — we hope this helps you on your Canadian dream journey. Cheers!</div>
 
   <!-- NAV TABS -->
   <div class="main-nav">
     <div class="nav-inner">
-      <div class="nav-tab active" onclick="switchTop('ee')">🇨🇦 Express Entry (CRS)</div>
-      <div class="nav-tab" onclick="switchTop('pnp')">🏅 Provincial Nominee (PNP)</div>
-      <div class="nav-tab" onclick="switchTop('pp')">📅 Citizenship - Physical Presence</div>
-      <div class="nav-tab" onclick="switchTop('contact')">📬 Contact Us</div>
+      <div class="nav-tab active" onclick="switchTop('pnp')">🏅 Provincial Nominee (PNP)</div>
+      <div class="nav-tab" onclick="switchTop('ee')">🇨🇦 Express Entry (CRS)</div>
       <div class="nav-spacer"></div>
       <div class="nav-info">Updated <span id="dynamic-updated-date"></span></div>
     </div>
@@ -322,7 +314,7 @@ footer a{color:#b2dfdb;}
 </div>
 
 <!-- ══════════════════ PNP PANEL ══════════════════ -->
-<div id="panel-pnp" class="calc-panel">
+<div id="panel-pnp" class="calc-panel active">
 <div class="purpose-bar purpose-pnp">
   <strong>Purpose:</strong> Get a general idea of where your PNP profile stands before consulting a licensed RCIC.
   Always verify your actual score on the <a id="pnp-official-link" href="#" target="_blank">province's official website ↗</a>.
@@ -409,7 +401,7 @@ footer a{color:#b2dfdb;}
 </div>
 
 <!-- ══════════════════ EE PANEL ══════════════════ -->
-<div id="panel-ee" class="calc-panel active">
+<div id="panel-ee" class="calc-panel">
 <div class="purpose-bar purpose-ee">
   <strong>Purpose:</strong> Get a general idea of where your Express Entry CRS profile stands before consulting a licensed RCIC.
   Always verify your actual score on the province's official website.
@@ -418,13 +410,7 @@ footer a{color:#b2dfdb;}
   <div class="left-col">
     <div class="ee-hdr">
       <h2>🇨🇦 CRS — Comprehensive Ranking System (Express Entry)</h2>
-      <p>Official IRCC CRS grid. Max 1,200 pts. Job offer points removed Mar 25, 2025. Source: <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/check-score/crs-criteria.html" target="_blank">canada.ca/crs-criteria ↗</a></p>
-    </div>
-    <div style="background:#E0F2F1;border:1px solid var(--grl);border-top:none;padding:.5rem .95rem;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;">
-      <span style="font-size:.75rem;font-weight:600;color:var(--teal2);">Accompanying spouse or common-law partner?</span>
-      <label style="font-size:.73rem;cursor:pointer;display:flex;align-items:center;gap:.3rem;"><input type="radio" name="ee_sp" value="no" checked onchange="eeSpouse=false;buildEE()"> No</label>
-      <label style="font-size:.73rem;cursor:pointer;display:flex;align-items:center;gap:.3rem;"><input type="radio" name="ee_sp" value="yes" onchange="eeSpouse=true;buildEE()"> Yes</label>
-      <span id="ee-sp-lbl" style="margin-left:auto;font-size:.68rem;color:var(--gr);">Max core: <strong>500</strong> pts</span>
+      <p>Updated Mar 2025. Employer job offer bonus removed. Max 1,200 pts. Official: <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html" target="_blank">canada.ca/express-entry ↗</a></p>
     </div>
     <div class="ee-body" id="ee-inputs"></div>
     <div class="inline-ad-wrap">
@@ -449,7 +435,7 @@ footer a{color:#b2dfdb;}
     <div class="thresh-card">
       <h3>🍁 2026 Draw Reference</h3>
       <div class="thresh-val">500–560 pts</div>
-      <div class="thresh-note">General draws: ~524+ (Feb 2026). Category draws (French, healthcare, trades): ~400–470. PNP nomination adds +600 pts instantly.<br><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html" target="_blank" style="color:var(--teal);font-weight:600;">View all past draw results ↗</a></div>
+      <div class="thresh-note">General draws: ~524+ (Feb 2026). Category draws (French, healthcare, trades): ~400–470. PNP nomination adds +600 pts instantly.</div>
     </div>
     <div class="ad-card">
       <span class="ad-card-label">Sponsored</span>
@@ -470,147 +456,13 @@ footer a{color:#b2dfdb;}
 </div>
 </div>
 
-<!-- ══ PHYSICAL PRESENCE PANEL ══ -->
-<div id="panel-pp" class="calc-panel">
-<div class="purpose-bar purpose-ee">
-  <strong>Purpose:</strong> Calculate how many days you've been physically present in Canada to check eligibility for citizenship. Need <strong>1,095 days</strong> in the 5 years before you apply.
-  Always verify with the <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/adult-minor/how.html" target="_blank">official IRCC website ↗ for citizenship.</a>
-</div>
-<div class="page">
-  <div class="left-col">
-    <div class="ee-hdr">
-      <h2>📅 Citizenship - Physical Presence Calculator — Canadian Citizenship</h2>
-      <p>Based on the Citizenship Act. You need <strong>1,095 days</strong> in the 5 years immediately before your application date. Departure and return days both count as presence.</p>
-    </div>
-
-    <!-- Step 1: Application date -->
-    <div style="background:var(--wh);border:1px solid var(--grl);border-top:none;border-radius:0 0 10px 10px;padding:.9rem .95rem;">
-      <div class="grp-lbl" style="margin:0 -.95rem 0;border-radius:0;">Step 1 — Your Details</div>
-
-      <div class="cr-row">
-        <div><div class="cr-lbl">Application date (or today)</div><div class="cr-desc">The date you plan to sign/submit your citizenship application. The 5-year window ends the day BEFORE this date.</div></div>
-        <div class="cr-ctrl"><input type="date" id="pp-app-date" style="width:146px;padding:.26rem .42rem;border:1.5px solid var(--grl);border-radius:6px;font-family:'Inter',sans-serif;font-size:.71rem;background:var(--off);" onchange="calcPP()"></div>
-      </div>
-
-      <div class="cr-row">
-        <div><div class="cr-lbl">PR Landing date</div><div class="cr-desc">The date you first became a Permanent Resident of Canada.</div></div>
-        <div class="cr-ctrl"><input type="date" id="pp-pr-date" style="width:146px;padding:.26rem .42rem;border:1.5px solid var(--grl);border-radius:6px;font-family:'Inter',sans-serif;font-size:.71rem;background:var(--off);" onchange="calcPP()"></div>
-      </div>
-
-      <div class="grp-lbl" style="margin:1rem -.95rem 0;border-radius:0;">Step 2 — Time in Canada Before PR <span style="font-size:.6rem;opacity:.7;font-weight:400;">(optional — counts as ½ day, max 365 days)</span></div>
-      <div class="cr-row">
-        <div><div class="cr-lbl">Days in Canada as Temporary Resident</div><div class="cr-desc">Total days physically in Canada as a visitor, student, or worker BEFORE your PR landing date, within the 5-year window. Each day = 0.5 days toward the 1,095 requirement (max 365 days credit).</div></div>
-        <div class="cr-ctrl">
-          <input type="number" id="pp-temp-days" min="0" max="1826" value="0" style="width:146px;padding:.26rem .42rem;border:1.5px solid var(--grl);border-radius:6px;font-family:'Inter',sans-serif;font-size:.71rem;background:var(--off);" oninput="calcPP()">
-          <span class="bdg z" id="pp-temp-credit">0 days credit</span>
-        </div>
-      </div>
-
-      <div class="grp-lbl" style="margin:1rem -.95rem 0;border-radius:0;">Step 3 — Absences from Canada (since PR landing)</div>
-      <div style="font-size:.68rem;color:var(--gr);padding:.35rem 0 .5rem;line-height:1.6;">
-        Add each trip outside Canada since you became a PR. <strong>Departure and return days are NOT counted as absences</strong> — both count as presence days. Only the days in between count as absent.
-      </div>
-      <div id="pp-absences"></div>
-      <button onclick="ppAddTrip()" style="margin-top:.5rem;background:var(--teal-lt);border:1.5px solid var(--teal);color:var(--teal2);border-radius:7px;padding:.35rem .8rem;font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;cursor:pointer;">+ Add Absence / Trip Outside Canada</button>
-    </div>
-  </div>
-
-  <!-- RIGHT: Results -->
-  <div class="right-col">
-    <div class="stbl-wrap">
-      <div class="stbl-hdr">📋 Physical Presence Summary <span class="score-pill" id="pp-pill">0</span></div>
-      <table class="stbl">
-        <thead><tr><th>Factor</th><th>Days</th></tr></thead>
-        <tbody id="pp-tbody">
-          <tr><td colspan="2" style="text-align:center;color:var(--gr);font-style:italic;padding:.8rem;">Enter your details to calculate</td></tr>
-        </tbody>
-        <tfoot>
-          <tr class="tot-r"><td>Total Physical Presence</td><td id="pp-grand">0</td></tr>
-        </tfoot>
-      </table>
-    </div>
-
-    <!-- Eligibility card -->
-    <div class="thresh-card" id="pp-result-card">
-      <h3>🍁 Citizenship Eligibility</h3>
-      <div class="thresh-val" id="pp-status" style="font-size:1rem;">—</div>
-      <div class="thresh-note" id="pp-note">Enter your application date and PR landing date to begin.</div>
-    </div>
-
-    <!-- Progress bar card -->
-    <div style="background:var(--wh);border-radius:10px;border:1px solid var(--grl);padding:.85rem .9rem;">
-      <div style="font-size:.65rem;font-weight:600;color:var(--gr);text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem;">Progress to 1,095 Days</div>
-      <div style="background:var(--grl);border-radius:20px;height:12px;overflow:hidden;">
-        <div id="pp-bar" style="background:var(--teal);height:100%;width:0%;border-radius:20px;transition:width .4s;"></div>
-      </div>
-      <div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--gr);margin-top:.3rem;">
-        <span id="pp-bar-label">0 / 1,095 days</span>
-        <span id="pp-bar-pct">0%</span>
-      </div>
-    </div>
-
-    <div style="background:var(--teal-lt);border:1px solid var(--grl);border-radius:10px;padding:.75rem .9rem;font-size:.67rem;color:#004D40;line-height:1.7;">
-      <strong>Key Rules:</strong><br>
-      ✓ Need 1,095 days in the 5 years before application<br>
-      ✓ Departure &amp; return days = presence (not absence)<br>
-      ✓ Pre-PR days in Canada = ½ credit (max 365 days)<br>
-      ✓ Must have at least 1,095 days as PR (cannot be all pre-PR days)<br>
-      ✓ Always apply with a buffer above 1,095 days<br>
-      <a href="https://www.canada.ca/en.html" target="_blank" style="color:var(--teal2);font-weight:600;">Use official IRCC calculator to confirm ↗</a>
-    </div>
-
-    <button class="reset-btn" onclick="ppReset()">↺ Reset Calculator</button>
-  </div>
-</div>
-</div>
-
-<!-- ══ CONTACT US PANEL ══ -->
-<div id="panel-contact" class="calc-panel">
-<div style="max-width:1200px;margin:1.5rem auto;padding:0 1.5rem;">
-  <div class="ee-hdr" style="border-radius:10px 10px 0 0;">
-    <h2>📬 Contact Us</h2>
-    <p>We'd love to hear from you — reach out anytime!</p>
-  </div>
-  <div style="background:var(--wh);border:1px solid var(--grl);border-top:none;border-radius:0 0 10px 10px;padding:2rem 1.5rem;display:flex;flex-direction:column;gap:1.25rem;">
-
-    <!-- Email card -->
-    <div style="display:flex;align-items:center;gap:1rem;background:var(--teal-lt);border:1px solid #80CBC4;border-radius:10px;padding:1rem 1.25rem;">
-      <div style="font-size:2rem;flex-shrink:0;">✉️</div>
-      <div>
-        <div style="font-size:.78rem;font-weight:700;color:var(--teal2);margin-bottom:.2rem;">Email Us</div>
-        <a href="mailto:team@egcellentlifesolutions.com" style="font-size:.9rem;font-weight:600;color:var(--teal2);text-decoration:underline;">team@egcellentlifesolutions.com</a>
-      </div>
-    </div>
-
-    <!-- Website card -->
-    <div style="display:flex;align-items:center;gap:1rem;background:#FFF3E0;border:1px solid #FFB74D;border-radius:10px;padding:1rem 1.25rem;">
-      <div style="font-size:2rem;flex-shrink:0;">🌐</div>
-      <div>
-        <div style="font-size:.78rem;font-weight:700;color:var(--orange);margin-bottom:.2rem;">Visit Our Website</div>
-        <a href="https://www.egcellentlifesolutions.com" target="_blank" style="font-size:.9rem;font-weight:600;color:var(--orange);text-decoration:underline;">www.egcellentlifesolutions.com</a>
-      </div>
-    </div>
-
-    <!-- Contact page link -->
-    <div style="text-align:center;padding:.5rem 0;">
-      <a href="https://egcellentlifesolutions.com/pages/contact" target="_blank"
-         style="display:inline-block;background:var(--teal);color:#fff;border-radius:8px;padding:.55rem 1.5rem;font-size:.82rem;font-weight:600;text-decoration:none;transition:background .15s;"
-         onmouseover="this.style.background='var(--teal2)'" onmouseout="this.style.background='var(--teal)'">
-        Open Contact Page ↗
-      </a>
-    </div>
-
-  </div>
-</div>
-</div>
-
 <!-- FOOTER -->
 <footer>
   <strong>CanadaPR.Guide</strong> is an independent, privately operated tool. &nbsp;|&nbsp;
-  <strong>Not affiliated with IRCC, PNP, or any government body.</strong> &nbsp;|&nbsp;
+  <strong>Not affiliated with IRCC, BC PNP, or any government body.</strong> &nbsp;|&nbsp;
   Scores are estimates for informational purposes only. &nbsp;|&nbsp;
   Always consult a licensed RCIC or official provincial websites. &nbsp;|&nbsp;
-  &nbsp;·&nbsp;
+  <a href="https://www.welcomebc.ca/immigrate-to-b-c/skills-immigration" target="_blank">Official BC PNP ↗</a> &nbsp;·&nbsp;
   <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html" target="_blank">Official Express Entry ↗</a>
   <br>© <span id="dynamic-year"></span> CanadaPR.Guide · Privacy Policy · Terms of Use · Advertising Disclosure
   <br><span style="font-size:.6rem;opacity:.6;">Advertising on this site is clearly labelled "Sponsored" or "Advertisement". We may earn a referral fee from partner links. This does not influence the accuracy of score calculations.</span>
@@ -767,340 +619,34 @@ const provs=[
  ]},
 ];
 
-/* ══ EXPRESS ENTRY — OFFICIAL IRCC CRS ══ */
-let eeSpouse=false;
-
-// Official point tables (with/without spouse)
-const EE_AGE={
- n:{'17':0,'18':99,'19':105,'20-29':110,'30':105,'31':99,'32':94,'33':88,'34':83,'35':77,'36':72,'37':66,'38':61,'39':55,'40':50,'41':39,'42':28,'43':17,'44':6,'45+':0},
- y:{'17':0,'18':90,'19':95,'20-29':100,'30':95,'31':90,'32':85,'33':80,'34':75,'35':70,'36':65,'37':60,'38':55,'39':50,'40':45,'41':35,'42':25,'43':15,'44':5,'45+':0}
-};
-const EE_EDU={n:[0,30,90,98,120,128,135,150],y:[0,28,84,91,112,119,126,140]};
-const EE_EDU_L=['Less than secondary','Secondary diploma','One-year credential','Two-year credential',"Bachelor's / 3-yr program",'Two+ credentials (one 3yr+)',"Master's / professional degree",'Doctoral (PhD)'];
-const EE_L1={n:[0,6,9,17,23,31,34],y:[0,6,8,16,22,29,32]};// per ability ×4
-const EE_L1_L=['CLB 3 or lower','CLB 4 or 5','CLB 6','CLB 7','CLB 8','CLB 9','CLB 10+'];
-const EE_L2=[0,1,3,6];// per ability ×4, same with/without
-const EE_L2_L=['CLB 4 or less','CLB 5 or 6','CLB 7 or 8','CLB 9 or more'];
-const EE_CWE={n:[0,40,53,64,72,80],y:[0,35,46,56,63,70]};
-const EE_CWE_L=['None or less than 1 year','1 year','2 years','3 years','4 years','5 years or more'];
-const EE_SP_EDU_L=['N/A','Less than secondary','Secondary diploma','One-year','Two-year',"Bachelor's / 3-yr",'Two+ (one 3yr+)',"Master's / doctoral"];
-const EE_SP_EDU_P=[0,0,2,6,7,8,9,10];
-const EE_SP_L1_L=['N/A or CLB 4 or less','CLB 5 or 6','CLB 7 or 8','CLB 9 or more'];
-const EE_SP_L1_P=[0,1,3,5];// per ability ×4
-const EE_SP_CWE_L=['N/A or none','1 year','2 years','3 years','4 years','5 years or more'];
-const EE_SP_CWE_P=[0,5,7,8,9,10];
-
-function buildEE(){
- const s=eeSpouse;
- const lbl=$('ee-sp-lbl');
- if(lbl) lbl.innerHTML='Max core: <strong>'+(s?'460':'500')+'</strong> pts';
- let h='';
-
- // A. Core
- h+=eH('A. Core / Human Capital','Score based on age, education, language and Canadian work experience. Points differ with/without spouse.');
- h+=eR('age','CRS – Age','Peak at age 20–29.',
-  [['17 or less',at('17')],['18',at('18')],['19',at('19')],['20 to 29',at('20-29')],
-   ['30',at('30')],['31',at('31')],['32',at('32')],['33',at('33')],['34',at('34')],['35',at('35')],
-   ['36',at('36')],['37',at('37')],['38',at('38')],['39',at('39')],['40',at('40')],
-   ['41',at('41')],['42',at('42')],['43',at('43')],['44',at('44')],['45 or more',at('45+')]]);
- h+=eR('edu','CRS – Level of Education','Highest completed credential only.',EE_EDU_L.map((l,i)=>[l,p(EE_EDU[s?'y':'n'][i])]));
- h+=eSH('First Official Language','Select your test type, enter your scores — CLB and CRS points calculate automatically. Max '+(s?'128':'136')+' pts combined.');
- h+=`<div id="ee-l1-block">
-  <div class="cr-row">
-   <div><div class="cr-lbl">Language Test Type</div><div class="cr-desc">Select the test you used for Express Entry.</div></div>
-   <div class="cr-ctrl">
-    <select id="ee-l1-test" onchange="eeL1TestChange()" style="width:146px;">
-     <option value="clb">Enter CLB directly</option>
-     <option value="celpip">CELPIP-General</option>
-     <option value="ielts">IELTS General Training</option>
-     <option value="pte">PTE Core</option>
-    </select>
-   </div>
-  </div>
-  <div id="ee-l1-inputs"></div>
-  <div style="font-size:.67rem;color:var(--teal2);background:var(--teal-lt);padding:.3rem .7rem;margin:.3rem -.95rem 0;border-top:1px solid var(--grl);display:flex;gap:1.5rem;flex-wrap:wrap;" id="ee-l1-clb-display">
-   <span>Listening CLB: <strong id="ee-clb-l1-listening">—</strong></span>
-   <span>Reading CLB: <strong id="ee-clb-l1-reading">—</strong></span>
-   <span>Writing CLB: <strong id="ee-clb-l1-writing">—</strong></span>
-   <span>Speaking CLB: <strong id="ee-clb-l1-speaking">—</strong></span>
-  </div>
- </div>`;
- h+=eSH('Second Official Language','Per ability (R/W/S/L). Max '+(s?22:24)+' pts combined. Only if tested in both EN and FR.');
- ['Listening','Reading','Writing','Speaking'].forEach(a=>h+=eR('l2_'+a.toLowerCase(),'Second Language – '+a,'',EE_L2_L.map((l,i)=>[l,p(EE_L2[i])])));
- h+=eR('cwe','CRS – Canadian Work Experience','Paid skilled work in Canada (TEER 0–3), last 10 yrs.',EE_CWE_L.map((l,i)=>[l,p(EE_CWE[s?'y':'n'][i])]));
-
- // B. Spouse
- h+=eH('B. Spouse / Common-Law Partner',s?"Spouse's score based on education, language and Canadian work experience.":'Set "Yes" above to unlock spouse fields.');
- const dis=s?'':'style="opacity:.4;pointer-events:none;"';
- h+=`<div ${dis}>`;
- h+=eR('sp_edu','CRS – Spouse Education','',EE_SP_EDU_L.map((l,i)=>[l,p(EE_SP_EDU_P[i])]));
- h+=eSH('Spouse – First Language','Per ability (R/W/S/L). Max 20 pts combined.');
- ['Listening','Reading','Writing','Speaking'].forEach(a=>h+=eR('sp_l1_'+a.toLowerCase(),'Spouse – First Language – '+a,'',EE_SP_L1_L.map((l,i)=>[l,p(EE_SP_L1_P[i])])));
- h+=eR('sp_cwe','CRS – Spouse Canadian Work Experience','',EE_SP_CWE_L.map((l,i)=>[l,p(EE_SP_CWE_P[i])]));
- h+='</div>';
-
- // C. Skill Transferability
- h+=eH('C. Skill Transferability','IRCC calculates this automatically from your education, language, and work experience. Maximum 100 pts total.');
- h+=`<div style="font-size:.68rem;color:#004D40;background:#E0F2F1;border-left:3px solid var(--teal);padding:.5rem .7rem;margin:.4rem 0 .4rem;line-height:1.6;">
-  Fill in the fields below — points calculate automatically.<br>
-  <strong>Note:</strong> IRCC counts CWE in <strong>complete years only</strong> (e.g. 1.83 yrs = 1 year, 3.6 yrs = 3 years).
- </div>`;
-
- h+=eR('st_edu_level','Education Level (Language combo)','Your highest credential anywhere. Foreign degrees count here.',
-  [['Less than post-secondary','0_edu'],
-   ['Post-secondary 1 year or more (diploma, cert, trades)','1_edu'],
-   ['2+ yr / Bachelor\'s / Master\'s / PhD','2_edu']]);
-
- h+=eR('st_edu_cwe_level','Education Level (Canadian Work Exp combo)',
-  'Select the credential level that your Canadian employer required for your job — not necessarily your highest degree. For most TEER 2–3 jobs, this is typically "1 year or more post-secondary."',
-  [['Less than post-secondary / none','0_edu'],
-   ['Post-secondary 1 year or more (diploma, cert, trades)','1_edu'],
-   ['2+ yr / Bachelor\'s / Master\'s / PhD','2_edu']]);
-
- h+=eR('st_lang_tier','Your First Language CLB Tier','Based on all 4 abilities of your first language test.',
-  [['CLB 6 or lower (no ST points)','0_lang'],
-   ['CLB 7 or 8 on all abilities (at least one under CLB 9)','7_lang'],
-   ['CLB 9 or more on ALL four abilities','9_lang']]);
-
- h+=eR('st_skilled_cwe','Skilled Canadian Work Exp — TEER 0–3',
-  'IRCC counts only <strong>complete 12-month periods</strong> (floor). Example: 1.83 years = 1 year. 3.6 calendar years may = 3 work-years depending on hours. Count only TEER 0–3 work in Canada.',
-  [['None / less than 1 full year','0_cwe'],
-   ['1 full year (1.0–1.99 yrs)','1_cwe'],
-   ['2 or more full years','2_cwe']]);
-
- h+=eR('st_fwe_years','Foreign Work Experience — TEER 0–3','Count all your skilled work outside Canada.',
-  [['None','0_fwe'],
-   ['1 or 2 years','1_fwe'],
-   ['3 years or more','3_fwe']]);
-
- h+=eR('st_cert','Certificate of Qualification (Trade occupations only)','Only applies if you hold a valid trade certificate.',
-  [['No certificate (or does not apply)','0'],
-   ['Certificate + CLB 5 or 6 (at least one under CLB 7)','25'],
-   ['Certificate + CLB 7 or more on ALL four abilities','50']]);
-
- h+=`<div id="st-breakdown" style="font-size:.68rem;background:var(--teal-lt);border:1px solid var(--grl);border-radius:6px;padding:.45rem .7rem;margin:.4rem 0 0;line-height:1.8;display:none;">
-  <strong style="color:var(--teal2);">ST Breakdown:</strong>
-  <span id="st-edu-detail"></span> &nbsp;|&nbsp;
-  <span id="st-fwe-detail"></span> &nbsp;|&nbsp;
-  <strong>Total: <span id="st-total-detail">0</span> / 100 pts</strong>
- </div>`;
-
- // D. Additional
- h+=eH('D. Additional Points','Provincial nomination, sibling in Canada, French language and Canadian education.');
- h+=eR('add_pnp','Provincial / Territorial Nomination','Valid nomination adds 600 pts — virtually guarantees an ITA.',
-  [['No nomination','0'],['Yes – valid provincial/territorial nomination','600']]);
- h+=eR('add_edu','CRS – Canadian Education','Post-secondary credential completed in Canada.',
-  [['No Canadian post-secondary','0'],['1–2 year Canadian credential','15'],['3+ year Canadian credential','30']]);
- h+=eR('add_sib','CRS – Sibling in Canada','Sibling in Canada who is a citizen or PR, aged 18+.',
-  [['No','0'],['Yes','15']]);
- h+=eR('add_fr','CRS – French Proficiency / Bilingualism','NCLC 7+ in all four French abilities.',
-  [['No French test or NCLC below 7','0'],['French NCLC 7+, English CLB 4 or lower','25'],['French NCLC 7+, English CLB 5 or higher','50']]);
-
- $('ee-inputs').innerHTML=h;
- // Init language test selector (rebuilds L1 dropdowns)
- eeL1TestChange();
- // Restore saved values for standard dropdowns
- Object.keys(eV).forEach(k=>{
-  const el=$('ee-'+k);
-  if(el) el.value=eV[k];
- });
- // Re-apply ST string values (not numeric — need direct set)
- ['st_edu_level','st_edu_cwe_level','st_lang_tier','st_skilled_cwe','st_fwe_years'].forEach(k=>{
-  const el=$('ee-'+k);
-  if(el && eV[k]) el.value=eV[k];
- });
- calcEE();
-}
-
-function at(k){return String(EE_AGE[eeSpouse?'y':'n'][k]);}
-function p(v){return String(v);}
-function eH(t,d){return `<div class="grp-lbl">${t}</div>`+(d?`<div style="font-size:.67rem;color:var(--gr);padding:.3rem .95rem .1rem;margin:0 -.95rem;background:var(--off);border-bottom:1px solid var(--grl);">${d}</div>`:'');}
-function eSH(t,d){return `<div style="font-size:.63rem;font-weight:600;color:var(--teal2);background:var(--teal-lt);padding:.22rem .95rem;margin:.4rem -.95rem 0;border-top:1px solid var(--grl);border-bottom:1px solid var(--grl);">${t}${d?' <span style="font-weight:400;color:var(--gr);">— '+d+'</span>':''}</div>`;}
-function eR(key,lbl,desc,opts){
- const cur=eV[key]||'0';const pts=parseInt(cur)||0;
- return `<div class="cr-row"><div><div class="cr-lbl">${lbl}</div>${desc?'<div class="cr-desc">'+desc+'</div>':''}</div>
-  <div class="cr-ctrl"><select id="ee-${key}" onchange="eeUpd('${key}',this)">
-   ${opts.map(o=>`<option value="${o[1]}"${o[1]===cur?' selected':''}>${o[0]}</option>`).join('')}
-  </select><span class="${pts>0?'bdg':'bdg z'}" id="ee-b-${key}">${pts} pts</span></div></div>`;
-}
-function eeUpd(key,el){
- eV[key]=el.value;const v=parseInt(el.value)||0;
- const b=$('ee-b-'+key);if(b){b.textContent=v+' pts';b.className=v>0?'bdg':'bdg z';}
- calcEE();
-}
-function calcEE(){
- const g=k=>parseInt(eV[k]||0);
- const s=eeSpouse;
- const age=g('age'),edu=g('edu');
- const l1=Math.min(g('l1_reading')+g('l1_writing')+g('l1_speaking')+g('l1_listening'),s?128:136);
- const l2=Math.min(g('l2_reading')+g('l2_writing')+g('l2_speaking')+g('l2_listening'),s?22:24);
- const cwe=g('cwe');
- const core=age+edu+l1+l2+cwe;
- const sp_edu=s?g('sp_edu'):0;
- const sp_l1=s?Math.min(g('sp_l1_reading')+g('sp_l1_writing')+g('sp_l1_speaking')+g('sp_l1_listening'),20):0;
- const sp_cwe=s?g('sp_cwe'):0;
- const sp=sp_edu+sp_l1+sp_cwe;
- // C. Skill Transferability — compute from 4 simple inputs
- const st_edu_lv     = eV['st_edu_level']||'0_edu';
- const st_edu_cwe_lv = eV['st_edu_cwe_level']||'0_edu';
- const st_lang   = eV['st_lang_tier']||'0_lang';
- const st_cwe    = eV['st_skilled_cwe']||'0_cwe';
- const st_fwe_y  = eV['st_fwe_years']||'0_fwe';
- const st_cert   = g('st_cert');
-
- // Education + Language lookup [edu][lang] → pts
- const edu_lang_tbl = {
-  '0_edu':{'0_lang':0,'7_lang':0,'9_lang':0},
-  '1_edu':{'0_lang':0,'7_lang':13,'9_lang':25},
-  '2_edu':{'0_lang':0,'7_lang':25,'9_lang':50}
- };
- // Education + CWE lookup [edu][cwe] → pts
- const edu_cwe_tbl = {
-  '0_edu':{'0_cwe':0,'1_cwe':0,'2_cwe':0},
-  '1_edu':{'0_cwe':0,'1_cwe':13,'2_cwe':25},
-  '2_edu':{'0_cwe':0,'1_cwe':25,'2_cwe':50}
- };
- // FWE + Language lookup [fwe][lang] → pts
- const fwe_lang_tbl = {
-  '0_fwe':{'0_lang':0,'7_lang':0,'9_lang':0},
-  '1_fwe':{'0_lang':0,'7_lang':13,'9_lang':25},
-  '3_fwe':{'0_lang':0,'7_lang':25,'9_lang':50}
- };
- // FWE + CWE lookup [fwe][cwe] → pts
- const fwe_cwe_tbl = {
-  '0_fwe':{'0_cwe':0,'1_cwe':0,'2_cwe':0},
-  '1_fwe':{'0_cwe':0,'1_cwe':13,'2_cwe':25},
-  '3_fwe':{'0_cwe':0,'1_cwe':25,'2_cwe':50}
- };
-
- const el_pts  = (edu_lang_tbl[st_edu_lv]||{})[st_lang]||0;
- const ec_pts  = (edu_cwe_tbl[st_edu_cwe_lv]||{})[st_cwe]||0;
- const fl_pts  = (fwe_lang_tbl[st_fwe_y]||{})[st_lang]||0;
- const fc_pts  = (fwe_cwe_tbl[st_fwe_y]||{})[st_cwe]||0;
-
- const st_edu = Math.min(el_pts + ec_pts, 50);
- const st_fwe = Math.min(fl_pts + fc_pts, 50);
- const st = Math.min(st_edu + st_fwe + st_cert, 100);
-
- // Update breakdown display
- const bd = document.getElementById('st-breakdown');
- if(bd){
-  bd.style.display='block';
-  const edu_d = document.getElementById('st-edu-detail');
-  const fwe_d = document.getElementById('st-fwe-detail');
-  const tot_d = document.getElementById('st-total-detail');
-  if(edu_d) edu_d.innerHTML=`Edu: ${el_pts}+${ec_pts}=<strong>${st_edu}</strong>`;
-  if(fwe_d) fwe_d.innerHTML=`FWE: ${fl_pts}+${fc_pts}=<strong>${st_fwe}</strong>`;
-  if(tot_d) tot_d.textContent=st;
- }
- const add=g('add_pnp')+g('add_edu')+g('add_sib')+g('add_fr');
- const grand=Math.min(core+sp+st+add,1200);
- const tr=(l,v,sub)=>`<tr${sub?' class="grp-r"':''}><td>${l}</td><td>${v}</td></tr>`;
- let rows='';
- rows+=tr('A. Core / Human Capital',core,true);
- rows+=tr('CRS – Human Capital – Age',age);
- rows+=tr('CRS – Human Capital – Level of Education',edu);
- rows+=tr('CRS – First Language (4 abilities, max '+(s?128:136)+')',l1);
- rows+=tr('CRS – Second Language (4 abilities, max '+(s?22:24)+')',l2);
- rows+=tr('CRS – Human Capital – Canadian Work Experience',cwe);
- rows+=tr('B. Spouse / Partner Factors',sp,true);
- rows+=tr('CRS – Spouse – Level of Education',sp_edu);
- rows+=tr('CRS – Spouse – First Language (4 abilities)',sp_l1);
- rows+=tr('CRS – Spouse – Canadian Work Experience',sp_cwe);
- rows+=tr('C. Skill Transferability (max 100)',st,true);
- rows+=tr('CRS – Skill Transferability – Education (Lang '+el_pts+' + CWE '+ec_pts+')',st_edu);
- rows+=tr('CRS – Skill Transferability – Foreign Work Exp (Lang '+fl_pts+' + CWE '+fc_pts+')',st_fwe);
- rows+=tr('CRS – Skill Transferability – Certificate of Qualification',st_cert);
- rows+=tr('D. Additional Points',add,true);
- rows+=tr('Provincial / Territorial Nomination',g('add_pnp'));
- rows+=tr('CRS – Canadian Education',g('add_edu'));
- rows+=tr('CRS – Sibling in Canada',g('add_sib'));
- rows+=tr('CRS – French Proficiency / Bilingualism',g('add_fr'));
- $('ee-tbody').innerHTML=rows;
- $('ee-grand').textContent=grand;
- $('ee-pill').textContent=grand;
-}
-
-/* ══ LANGUAGE TEST DROPDOWN OPTIONS ══
-   Each test/ability has dropdown options: [label, clb]
-   CLB is then converted to CRS pts via clbToCRS()
-══════════════════════════════════════════ */
-const L1_OPTS={
- clb:{
-  Listening: [['CLB 3 or lower',3],['CLB 4 or 5',4],['CLB 6',6],['CLB 7',7],['CLB 8',8],['CLB 9',9],['CLB 10 or more',10]],
-  Reading:   [['CLB 3 or lower',3],['CLB 4 or 5',4],['CLB 6',6],['CLB 7',7],['CLB 8',8],['CLB 9',9],['CLB 10 or more',10]],
-  Writing:   [['CLB 3 or lower',3],['CLB 4 or 5',4],['CLB 6',6],['CLB 7',7],['CLB 8',8],['CLB 9',9],['CLB 10 or more',10]],
-  Speaking:  [['CLB 3 or lower',3],['CLB 4 or 5',4],['CLB 6',6],['CLB 7',7],['CLB 8',8],['CLB 9',9],['CLB 10 or more',10]]
- },
- celpip:{
-  // CELPIP score = CLB directly (4=CLB4 … 10+=CLB10)
-  Listening: [['M (below 4) – CLB 3',3],['4 – CLB 4',4],['5 – CLB 5',5],['6 – CLB 6',6],['7 – CLB 7',7],['8 – CLB 8',8],['9 – CLB 9',9],['10, 11, 12 – CLB 10+',10]],
-  Reading:   [['M (below 4) – CLB 3',3],['4 – CLB 4',4],['5 – CLB 5',5],['6 – CLB 6',6],['7 – CLB 7',7],['8 – CLB 8',8],['9 – CLB 9',9],['10, 11, 12 – CLB 10+',10]],
-  Writing:   [['M (below 4) – CLB 3',3],['4 – CLB 4',4],['5 – CLB 5',5],['6 – CLB 6',6],['7 – CLB 7',7],['8 – CLB 8',8],['9 – CLB 9',9],['10, 11, 12 – CLB 10+',10]],
-  Speaking:  [['M (below 4) – CLB 3',3],['4 – CLB 4',4],['5 – CLB 5',5],['6 – CLB 6',6],['7 – CLB 7',7],['8 – CLB 8',8],['9 – CLB 9',9],['10, 11, 12 – CLB 10+',10]]
- },
- ielts:{
-  // IELTS General Training official IRCC conversion
-  Listening: [['4.5 – CLB 4',4],['5.0 – CLB 5',5],['5.5 – CLB 6',6],['6.0 – CLB 7',7],['7.5 – CLB 8',8],['8.0 – CLB 9',9],['8.5–9.0 – CLB 10+',10]],
-  Reading:   [['3.5 – CLB 4',4],['4.0 – CLB 5',5],['5.0 – CLB 6',6],['6.0 – CLB 7',7],['7.0 – CLB 9',9],['8.0–9.0 – CLB 10+',10]],
-  Writing:   [['4.0 – CLB 4',4],['5.0 – CLB 5',5],['5.5 – CLB 6',6],['6.0 – CLB 7',7],['6.5 – CLB 8',8],['7.0 – CLB 9',9],['7.5–9.0 – CLB 10+',10]],
-  Speaking:  [['4.0 – CLB 4',4],['5.0 – CLB 5',5],['5.5 – CLB 6',6],['6.0 – CLB 7',7],['6.5 – CLB 8',8],['7.0 – CLB 9',9],['7.5–9.0 – CLB 10+',10]]
- },
- pte:{
-  // PTE Core score ranges per ability → CLB
-  Listening: [['28–38 – CLB 4',4],['39–49 – CLB 5',5],['50–59 – CLB 6',6],['60–70 – CLB 7',7],['71–81 – CLB 8',8],['82–88 – CLB 9',9],['89–90 – CLB 10+',10]],
-  Reading:   [['33–41 – CLB 4',4],['42–50 – CLB 5',5],['51–59 – CLB 6',6],['60–68 – CLB 7',7],['69–77 – CLB 8',8],['78–87 – CLB 9',9],['88–90 – CLB 10+',10]],
-  Writing:   [['41–50 – CLB 4',4],['51–59 – CLB 5',5],['60–68 – CLB 6',6],['69–78 – CLB 7',7],['79–87 – CLB 8',8],['88–89 – CLB 9',9],['90 – CLB 10+',10]],
-  Speaking:  [['42–50 – CLB 4',4],['51–58 – CLB 5',5],['59–67 – CLB 6',6],['68–75 – CLB 7',7],['76–83 – CLB 8',8],['84–88 – CLB 9',9],['89–90 – CLB 10+',10]]
- }
-};
-
-// CLB → CRS points per ability
-function clbToCRS(clb,withSpouse){
- const t=withSpouse?[0,0,0,0,6,6,8,16,22,29,32]:[0,0,0,0,6,6,9,17,23,31,34];
- return t[Math.min(clb,10)]||0;
-}
-
-function eeL1TestChange(){
- const test=document.getElementById('ee-l1-test').value;
- const abilities=['Listening','Reading','Writing','Speaking'];
- let h='';
- abilities.forEach(ab=>{
-  const rawKey='l1_raw_'+ab.toLowerCase();
-  const cur=eV[rawKey]||'';
-  const opts=L1_OPTS[test][ab];
-  h+=`<div class="cr-row">
-   <div><div class="cr-lbl">First Language – ${ab}</div></div>
-   <div class="cr-ctrl">
-    <select id="ee-l1-raw-${ab.toLowerCase()}" onchange="eeL1Change('${ab}',this.value)">
-     <option value="">— select —</option>
-     ${opts.map(([lbl,clb])=>`<option value="${clb}"${String(clb)===cur?' selected':''}>${lbl}</option>`).join('')}
-    </select>
-    <span class="${cur&&cur!='3'&&parseInt(cur)>=4?'bdg':'bdg z'}" id="ee-b-l1-${ab.toLowerCase()}">${cur&&parseInt(cur)>=4?clbToCRS(parseInt(cur),eeSpouse)+' pts':'0 pts'}</span>
-   </div>
-  </div>`;
- });
- document.getElementById('ee-l1-inputs').innerHTML=h;
- // Restore saved values and recalc
- abilities.forEach(ab=>{
-  const cur=eV['l1_raw_'+ab.toLowerCase()];
-  if(cur) eeL1Change(ab,cur,true);
- });
-}
-
-function eeL1Change(ab,clbStr,silent){
- const clb=parseInt(clbStr)||0;
- const pts=clb>=4?clbToCRS(clb,eeSpouse):0;
- const key='l1_'+ab.toLowerCase();
- eV[key]=String(pts);
- eV['l1_raw_'+ab.toLowerCase()]=clbStr;
- const b=document.getElementById('ee-b-l1-'+ab.toLowerCase());
- if(b){b.textContent=pts+' pts';b.className=pts>0?'bdg':'bdg z';}
- const d=document.getElementById('ee-clb-l1-'+ab.toLowerCase());
- if(d) d.textContent=clb>=4?'CLB '+clb:'—';
- if(!silent) calcEE();
- else calcEE();
-}
+/* ══ EXPRESS ENTRY ══ */
+const eeDefs=[
+ {grp:'Core Human Capital',rows:[
+  {lbl:'Age',max:110,opts:[['Under 18','0'],['18–19','90'],['20–29','110'],['30','105'],['31','99'],['32','94'],['33','88'],['34','83'],['35','77'],['36','72'],['37','66'],['38','61'],['39','55'],['40','50'],['41','39'],['42','28'],['43','17'],['44','6'],['45+','0']]},
+  {lbl:'Education – level',max:140,opts:[['< Secondary','0'],['Secondary','28'],['1-yr post-sec','84'],['2-yr post-sec','91'],["Bachelor's / 3-yr",'112'],['Two+ (one 3yr+)','119'],["Master's / Professional",'126'],['Doctoral','140']]},
+  {lbl:'Education – Canadian credential bonus',desc:'Additional pts if credential earned in Canada.',max:30,opts:[['No Canadian education','0'],['Secondary in Canada','5'],['Post-sec 1–2 yrs in Canada','15'],['Post-sec 3+ yrs in Canada','30']]},
+  {lbl:'First Language – Reading (CLB)',max:32,opts:[['CLB 3–','0'],['CLB 4','6'],['CLB 5','6'],['CLB 6','8'],['CLB 7','16'],['CLB 8','22'],['CLB 9','29'],['CLB 10+','32']]},
+  {lbl:'First Language – Writing (CLB)',max:32,opts:[['CLB 3–','0'],['CLB 4','6'],['CLB 5','6'],['CLB 6','8'],['CLB 7','16'],['CLB 8','22'],['CLB 9','29'],['CLB 10+','32']]},
+  {lbl:'First Language – Listening (CLB)',max:32,opts:[['CLB 3–','0'],['CLB 4','6'],['CLB 5','6'],['CLB 6','8'],['CLB 7','16'],['CLB 8','22'],['CLB 9','29'],['CLB 10+','32']]},
+  {lbl:'First Language – Speaking (CLB)',max:32,opts:[['CLB 3–','0'],['CLB 4','6'],['CLB 5','6'],['CLB 6','8'],['CLB 7','16'],['CLB 8','22'],['CLB 9','29'],['CLB 10+','32']]},
+  {lbl:'Second Language – Reading',max:6,opts:[['N/A or CLB 4','0'],['CLB 5–6','1'],['CLB 7–8','3'],['CLB 9+','6']]},
+  {lbl:'Second Language – Writing',max:6,opts:[['N/A or CLB 4','0'],['CLB 5–6','1'],['CLB 7–8','3'],['CLB 9+','6']]},
+  {lbl:'Second Language – Listening',max:6,opts:[['N/A or CLB 4','0'],['CLB 5–6','1'],['CLB 7–8','3'],['CLB 9+','6']]},
+  {lbl:'Second Language – Speaking',max:6,opts:[['N/A or CLB 4','0'],['CLB 5–6','1'],['CLB 7–8','3'],['CLB 9+','6']]},
+  {lbl:'Foreign work experience (yrs)',desc:'TEER 0–3, last 10 yrs, outside Canada.',max:50,opts:[['None','0'],['1 yr','13'],['2–3 yrs','25'],['4–5 yrs','38'],['5+ yrs','50']]},
+  {lbl:'Canadian work experience (yrs)',desc:'TEER 0–3, last 5 yrs, inside Canada.',max:80,opts:[['None','0'],['1 yr','35'],['2–3 yrs','46'],['4–5 yrs','56'],['5+ yrs','80']]},
+ ]},
+ {grp:'Spouse / Partner Factors',rows:[
+  {lbl:'Spouse – education level',max:10,opts:[['N/A','0'],['< Secondary','0'],['Secondary','2'],['1-yr post-sec','6'],['2-yr post-sec','7'],["Bachelor's",'8'],['Two+ (one 3yr+)','9'],["Master's+",'10']]},
+  {lbl:'Spouse – first language (lowest CLB)',max:20,opts:[['N/A or CLB 4–','0'],['CLB 5–6','1'],['CLB 7–8','3'],['CLB 9+','5']]},
+  {lbl:'Spouse – Canadian work experience',max:10,opts:[['N/A or none','0'],['1 yr','5'],['2 yrs','7'],['3 yrs','8'],['4 yrs','9'],['5+ yrs','10']]},
+ ]},
+ {grp:'Bonus Factors',rows:[
+  {lbl:'Provincial nomination (PNP)',desc:'Adds 600 pts — virtually guarantees an ITA.',max:600,opts:[['No nomination','0'],['Yes – valid provincial nomination','600']]},
+  {lbl:'Sibling in Canada (citizen or PR, 18+)',max:15,opts:[['No','0'],['Yes','15']]},
+  {lbl:'French language bonus',desc:'Only when no accompanying spouse.',max:50,opts:[['No','0'],['French CLB 7+, English < CLB 5','25'],['French CLB 7+, English CLB 5+','50']]},
+ ]},
+];
 
 /* ══ BUILD / RENDER ══ */
 function buildStrip(){
@@ -1174,12 +720,28 @@ function calcPNP(){
  $('pnp-pill').textContent=grand;
 }
 
+function calcEE(){
+ let grand=0,rows='';
+ eeDefs.forEach((g,gi)=>{
+  rows+=`<tr class="grp-r"><td>${g.grp}</td><td></td></tr>`;
+  let gs=0;
+  g.rows.forEach((r,ri)=>{
+   const v=Math.min(eV[`${gi}_${ri}`]||0,r.max);
+   gs+=v; rows+=`<tr><td>${r.lbl}</td><td>${v}</td></tr>`;
+  });
+  grand+=gs;
+  rows+=`<tr class="grp-r"><td>${g.grp} subtotal</td><td>${gs}</td></tr>`;
+ });
+ grand=Math.min(grand,1200);
+ $('ee-tbody').innerHTML=rows;
+ $('ee-grand').textContent=grand;
+ $('ee-pill').textContent=grand;
+}
+
 function switchTop(t){
- document.querySelectorAll('.nav-tab').forEach((el,i)=>el.classList.toggle('active',['ee','pnp','pp','contact'][i]===t));
+ document.querySelectorAll('.nav-tab').forEach((el,i)=>el.classList.toggle('active',['pnp','ee'][i]===t));
  $('panel-pnp').classList.toggle('active',t==='pnp');
  $('panel-ee').classList.toggle('active',t==='ee');
- $('panel-pp').classList.toggle('active',t==='pp');
- $('panel-contact').classList.toggle('active',t==='contact');
 }
 
 function swP(i){
@@ -1189,142 +751,14 @@ function swP(i){
 }
 
 function resetCalc(pfx){
- if(pfx==='pnp'){
-  pV={};
-  const inp=$('pnp-inputs');
-  inp.querySelectorAll('select').forEach(s=>s.selectedIndex=0);
-  inp.querySelectorAll('.bdg').forEach(b=>{b.textContent='0 pts';b.className='bdg z';});
-  calcPNP();
- } else {
-  Object.keys(eV).forEach(k=>delete eV[k]);
-  buildEE();
- }
+ if(pfx==='pnp'){pV={};}else{eV={};}
+ const inp=$(pfx==='pnp'?'pnp-inputs':'ee-inputs');
+ inp.querySelectorAll('select').forEach(s=>s.selectedIndex=0);
+ inp.querySelectorAll('.bdg').forEach(b=>{b.textContent='0 pts';b.className='bdg z';});
+ pfx==='pnp'?calcPNP():calcEE();
 }
 
-buildStrip(); renderPNP(); buildEE();
-
-/* ══ PHYSICAL PRESENCE CALCULATOR ══ */
-let ppTrips=[],ppTripId=0;
-
-function ppAddTrip(){
- ppTrips.push({id:++ppTripId,dep:'',ret:''});
- ppRenderTrips();
-}
-function ppRemoveTrip(id){
- ppTrips=ppTrips.filter(t=>t.id!==id);
- ppRenderTrips();calcPP();
-}
-function ppSetDep(id,v){const t=ppTrips.find(x=>x.id===id);if(t){t.dep=v;calcPP();}}
-function ppSetRet(id,v){const t=ppTrips.find(x=>x.id===id);if(t){t.ret=v;calcPP();}}
-
-function ppRenderTrips(){
- let h='';
- ppTrips.forEach((t,i)=>{
-  const n=i+1;
-  h+='<div style="display:grid;grid-template-columns:1fr 1fr auto;gap:.4rem;align-items:end;padding:.45rem 0;border-bottom:1px solid var(--grl);">'
-   +'<div><div class="cr-desc" style="margin-bottom:3px;">Trip '+n+' — Left Canada</div>'
-   +'<input type="date" value="'+t.dep+'" style="width:100%;padding:.26rem .42rem;border:1.5px solid var(--grl);border-radius:6px;font-family:Inter,sans-serif;font-size:.71rem;background:var(--off);"'
-   +' onchange="ppSetDep('+t.id+',this.value)"></div>'
-   +'<div><div class="cr-desc" style="margin-bottom:3px;">Returned to Canada</div>'
-   +'<input type="date" value="'+t.ret+'" style="width:100%;padding:.26rem .42rem;border:1.5px solid var(--grl);border-radius:6px;font-family:Inter,sans-serif;font-size:.71rem;background:var(--off);"'
-   +' onchange="ppSetRet('+t.id+',this.value)"></div>'
-   +'<button onclick="ppRemoveTrip('+t.id+')" style="background:#FEF2F2;border:1px solid #FECACA;color:#DC2626;border-radius:6px;padding:.3rem .55rem;font-size:.75rem;cursor:pointer;margin-bottom:1px;">&#10005;</button>'
-   +'</div>';
- });
- if(!ppTrips.length) h='<div style="font-size:.68rem;color:var(--gr);padding:.4rem 0;font-style:italic;">No absences added yet. Click &quot;+ Add Absence&quot; below to record each trip outside Canada.</div>';
- document.getElementById('pp-absences').innerHTML=h;
-}
-function calcPP(){
- const appStr=$('pp-app-date').value;
- const prStr=$('pp-pr-date').value;
- const tempRaw=Math.min(parseInt($('pp-temp-days').value)||0,730);
- const tempCredit=Math.min(Math.floor(tempRaw*0.5),365);
- const tcb=$('pp-temp-credit');
- if(tcb){tcb.textContent=tempCredit+' days credit';tcb.className=tempCredit>0?'bdg':'bdg z';}
- const tbody=$('pp-tbody');
- if(!appStr||!prStr){
-  if(tbody) tbody.innerHTML='<tr><td colspan="2" style="text-align:center;color:var(--gr);font-style:italic;padding:.8rem;">Enter your application date and PR landing date above.</td></tr>';
-  return;
- }
- // Parse dates locally (no timezone shift)
- const toD=s=>{const[y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d);};
- const diff=(a,b)=>Math.round((b-a)/86400000);
- const app=toD(appStr),pr=toD(prStr);
- const winStart=new Date(app);winStart.setFullYear(winStart.getFullYear()-5);
- const winEnd=new Date(app);winEnd.setDate(winEnd.getDate()-1);
- if(pr>winEnd){
-  if(tbody) tbody.innerHTML='<tr><td colspan="2" style="color:var(--orange);padding:.6rem;">PR landing date is after the application date. Please check your dates.</td></tr>';
-  return;
- }
- const prWinStart=pr>winStart?pr:winStart;
- const prDaysInWindow=diff(prWinStart,winEnd)+1;
- // Process absences
- let absTotal=0,absRows='',absWarn='';
- ppTrips.forEach((t,i)=>{
-  const n=i+1;
-  if(!t.dep||!t.ret){absWarn+='<tr><td style="color:var(--orange);">Trip '+n+': incomplete dates — skipped</td><td>—</td></tr>';return;}
-  const dep=toD(t.dep),ret=toD(t.ret);
-  if(ret<=dep){absWarn+='<tr><td style="color:var(--orange);">Trip '+n+': return must be after departure</td><td>—</td></tr>';return;}
-  // Absent = days strictly BETWEEN dep and ret
-  // Departure day and return day both count as presence in Canada
-  const absFrom=new Date(dep);absFrom.setDate(absFrom.getDate()+1);
-  const absTo=new Date(ret);absTo.setDate(absTo.getDate()-1);
-  if(absTo<absFrom){
-   absRows+='<tr><td>Trip '+n+': '+t.dep+' → '+t.ret+'</td><td style="color:var(--gr);">0 days (overnight trip)</td></tr>';
-   return;
-  }
-  // Clip to 5-year window and post-PR dates only
-  const cf=absFrom<pr?pr:absFrom<winStart?winStart:absFrom;
-  const ct=absTo>winEnd?winEnd:absTo;
-  if(ct<cf){
-   absRows+='<tr><td>Trip '+n+': '+t.dep+' → '+t.ret+'</td><td style="color:var(--gr);">0 days (outside 5-yr window)</td></tr>';
-   return;
-  }
-  const cd=diff(cf,ct)+1;
-  absTotal+=cd;
-  absRows+='<tr><td>Trip '+n+': '+t.dep+' → '+t.ret+'</td><td style="color:#DC2626;">−'+cd+'</td></tr>';
- });
- // Physical presence = PR days in window MINUS absence days
- const prPresence=Math.max(0,prDaysInWindow-absTotal);
- // Total = PR presence + pre-PR temp resident credit
- const total=prPresence+tempCredit;
- const needed=1095,shortfall=Math.max(0,needed-total);
- const pct=Math.min(100,Math.round(total/needed*100));
- const fmtD=d=>d.toLocaleDateString('en-CA',{year:'numeric',month:'short',day:'numeric'});
- let rows='<tr class="grp-r"><td>5-year window</td><td>'+fmtD(winStart)+' → '+fmtD(winEnd)+'</td></tr>';
- rows+='<tr><td>Days as PR in 5-year window</td><td>'+prDaysInWindow+'</td></tr>';
- if(absTotal>0||absRows||absWarn){
-  rows+='<tr class="grp-r"><td>Absences from Canada</td><td></td></tr>'+absRows+absWarn;
-  rows+='<tr><td><strong>PR presence (absences deducted)</strong></td><td><strong>'+prPresence+'</strong></td></tr>';
- } else {
-  rows+='<tr><td>Absences</td><td style="color:var(--teal);">None — fully present</td></tr>';
-  rows+='<tr><td><strong>PR presence days</strong></td><td><strong>'+prPresence+'</strong></td></tr>';
- }
- if(tempCredit>0) rows+='<tr><td>Pre-PR temp resident credit (½ × '+tempRaw+' days, max 365)</td><td style="color:var(--teal);">+'+tempCredit+'</td></tr>';
- rows+='<tr><td>Citizenship requirement</td><td>1,095 days</td></tr>';
- if(tbody) tbody.innerHTML=rows;
- $('pp-grand').textContent=total;
- $('pp-pill').textContent=total;
- const bar=$('pp-bar'),bl=$('pp-bar-label'),bp=$('pp-bar-pct');
- if(bar){bar.style.width=pct+'%';bar.style.background=total>=needed?'var(--teal)':total>=800?'var(--orange)':'#EF4444';}
- if(bl) bl.textContent=total+' / '+needed+' days';
- if(bp) bp.textContent=pct+'%';
- const st=$('pp-status'),nt=$('pp-note');
- if(total>=needed){
-  if(st){st.textContent='✅ Eligible to Apply';st.style.color='var(--teal)';}
-  if(nt) nt.textContent='You meet the 1,095-day requirement with '+(total-needed)+' day'+(total-needed===1?'':'s')+' to spare. Always apply with a buffer above the minimum.';
- } else {
-  const eligDate=new Date(app);eligDate.setDate(eligDate.getDate()+shortfall);
-  if(st){st.textContent='⏳ '+shortfall+' more day'+(shortfall===1?'':'s')+' needed';st.style.color='var(--orange)';}
-  if(nt) nt.textContent='You need '+shortfall+' more day'+(shortfall===1?'':'s')+'. If you stay continuously, estimated eligible around '+eligDate.toLocaleDateString('en-CA',{year:'numeric',month:'long',day:'numeric'})+'.';
- }
-}
-function ppReset(){
- $('pp-app-date').value=new Date().toISOString().split('T')[0];
- $('pp-pr-date').value='';$('pp-temp-days').value='0';
- ppTrips=[];ppTripId=0;ppRenderTrips();calcPP();
-}
-(function(){$('pp-app-date').value=new Date().toISOString().split('T')[0];ppRenderTrips();})();
+buildStrip();renderPNP();renderInputs(eeDefs,'ee');calcEE();
 
 // ── DYNAMIC DATES ──
 (function(){

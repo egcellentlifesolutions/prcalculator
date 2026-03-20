@@ -190,33 +190,30 @@ footer a{color:#b2dfdb;}
 }
 
 /* ── EGCELLENT SPONSOR BANNER ── */
-.eg-banner-wrap{background:#ffffff;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;padding:.55rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:.2rem;}
-.eg-ad-label{font-size:.55rem;color:#aaa;letter-spacing:2px;text-transform:uppercase;align-self:flex-start;max-width:1200px;width:100%;}
-.eg-banner{max-width:1200px;width:100%;display:flex;align-items:center;gap:1.25rem;text-decoration:none;color:var(--blk);padding:.35rem 0;flex-wrap:wrap;}
-.eg-banner:hover .eg-cta-pill{background:var(--teal);color:#fff;}
+.eg-banner-wrap{background:linear-gradient(135deg,#00695C 0%,#00897B 60%,#E8450A 100%);padding:.5rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:.2rem;}
+.eg-ad-label{font-size:.55rem;color:rgba(255,255,255,.5);letter-spacing:2px;text-transform:uppercase;align-self:flex-start;max-width:1200px;width:100%;}
+.eg-banner{max-width:1200px;width:100%;display:flex;align-items:center;gap:1.25rem;text-decoration:none;color:#fff;padding:.45rem 0;flex-wrap:wrap;}
+.eg-banner:hover .eg-cta-pill{background:#fff;color:var(--teal);}
 .eg-logo-area{display:flex;align-items:center;flex-shrink:0;}
-.eg-logo-img{height:48px;width:auto;max-width:200px;object-fit:contain;}
+.eg-logo-img{height:44px;width:auto;max-width:180px;object-fit:contain;filter:brightness(0) invert(1);}
 .eg-logo-fallback{display:flex;align-items:center;gap:.5rem;}
 .eg-logo-icon{background:var(--orange);color:#fff;border-radius:8px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;font-family:'Inter',sans-serif;letter-spacing:.5px;flex-shrink:0;}
 .eg-logo-text-wrap{display:flex;flex-direction:column;}
-.eg-logo-main{font-size:.95rem;font-weight:700;color:var(--blk);letter-spacing:1px;line-height:1;}
-.eg-logo-tagline{font-size:.6rem;color:var(--gr);letter-spacing:.5px;margin-top:1px;}
-.eg-divider{width:1px;height:36px;background:#ddd;flex-shrink:0;}
+.eg-logo-main{font-size:.95rem;font-weight:700;color:#fff;letter-spacing:1px;line-height:1;}
+.eg-logo-tagline{font-size:.6rem;color:rgba(255,255,255,.65);letter-spacing:.5px;margin-top:1px;}
+.eg-divider{width:1px;height:36px;background:rgba(255,255,255,.25);flex-shrink:0;}
 .eg-copy-area{flex:1;min-width:0;}
-.eg-headline{font-size:.9rem;font-weight:600;color:var(--blk);line-height:1.2;}
-.eg-sub{font-size:.68rem;color:var(--gr);margin-top:2px;}
-.eg-url{font-size:.62rem;color:var(--gr);margin-top:2px;letter-spacing:.3px;}
-.eg-cta-pill{background:transparent;border:1.5px solid var(--teal);border-radius:20px;padding:.3rem .9rem;font-size:.72rem;font-weight:600;color:var(--teal);white-space:nowrap;transition:all .15s;flex-shrink:0;}
+.eg-headline{font-size:.9rem;font-weight:600;color:#fff;line-height:1.2;}
+.eg-sub{font-size:.68rem;color:rgba(255,255,255,.65);margin-top:2px;}
+.eg-url{font-size:.62rem;color:rgba(255,255,255,.5);margin-top:2px;letter-spacing:.3px;}
+.eg-cta-pill{background:rgba(255,255,255,.18);border:1.5px solid rgba(255,255,255,.45);border-radius:20px;padding:.3rem .9rem;font-size:.72rem;font-weight:600;color:#fff;white-space:nowrap;transition:all .15s;flex-shrink:0;}
 @media(max-width:640px){
   .eg-divider{display:none;}
   .eg-headline{font-size:.82rem;}
   .eg-sub{display:none;}
-  .eg-logo-img{height:36px;}
+  .eg-logo-img{height:34px;}
   .eg-cta-pill{padding:.25rem .7rem;font-size:.66rem;}
 }
-
-/* ── THANK YOU BAR ── */
-.thankyou-bar{background:#E0F2F1;border-bottom:1px solid #B2DFDB;text-align:center;padding:.45rem 1.5rem;font-size:.76rem;color:#004D40;font-weight:500;letter-spacing:.2px;}
 
 /* ── HEADER EGCELLENT LOGO ── */
 .hdr-eg{display:flex;flex-direction:column;align-items:center;gap:1px;}
@@ -284,7 +281,6 @@ footer a{color:#b2dfdb;}
     </div>
     <div class="eg-divider"></div>
     <div class="eg-copy-area">
-      <div class="eg-headline">Your Canadian Life Solutions Partner</div>
       <div class="eg-url">egcellentlifesolutions.com</div>
     </div>
     <div class="eg-cta-pill">Visit Us ↗</div>
@@ -304,8 +300,6 @@ footer a{color:#b2dfdb;}
       <div class="disc-title">Independent estimation tool only — figures shown are <em>approximate guides</em>, not official scores. Your actual result may differ based on documentation, officer discretion, and program changes. Use this as a <strong>starting point</strong> to gauge your chances before speaking with a licensed RCIC. <span id="disc-updated"></span></div>
     </div>
   </div>
-  <!-- THANK YOU BAR -->
-  <div class="thankyou-bar">🍁 Thank you for visiting — we hope this helps you on your Canadian dream journey. Cheers!</div>
 
   <!-- NAV TABS -->
   <div class="main-nav">
@@ -313,7 +307,6 @@ footer a{color:#b2dfdb;}
       <div class="nav-tab active" onclick="switchTop('ee')">🇨🇦 Express Entry (CRS)</div>
       <div class="nav-tab" onclick="switchTop('pnp')">🏅 Provincial Nominee (PNP)</div>
       <div class="nav-tab" onclick="switchTop('pp')">📅 Citizenship - Physical Presence</div>
-      <div class="nav-tab" onclick="switchTop('contact')">📬 Contact Us</div>
       <div class="nav-spacer"></div>
       <div class="nav-info">Updated <span id="dynamic-updated-date"></span></div>
     </div>
@@ -560,46 +553,6 @@ footer a{color:#b2dfdb;}
     </div>
 
     <button class="reset-btn" onclick="ppReset()">↺ Reset Calculator</button>
-  </div>
-</div>
-</div>
-
-<!-- ══ CONTACT US PANEL ══ -->
-<div id="panel-contact" class="calc-panel">
-<div style="max-width:1200px;margin:1.5rem auto;padding:0 1.5rem;">
-  <div class="ee-hdr" style="border-radius:10px 10px 0 0;">
-    <h2>📬 Contact Us</h2>
-    <p>We'd love to hear from you — reach out anytime!</p>
-  </div>
-  <div style="background:var(--wh);border:1px solid var(--grl);border-top:none;border-radius:0 0 10px 10px;padding:2rem 1.5rem;display:flex;flex-direction:column;gap:1.25rem;">
-
-    <!-- Email card -->
-    <div style="display:flex;align-items:center;gap:1rem;background:var(--teal-lt);border:1px solid #80CBC4;border-radius:10px;padding:1rem 1.25rem;">
-      <div style="font-size:2rem;flex-shrink:0;">✉️</div>
-      <div>
-        <div style="font-size:.78rem;font-weight:700;color:var(--teal2);margin-bottom:.2rem;">Email Us</div>
-        <a href="mailto:team@egcellentlifesolutions.com" style="font-size:.9rem;font-weight:600;color:var(--teal2);text-decoration:underline;">team@egcellentlifesolutions.com</a>
-      </div>
-    </div>
-
-    <!-- Website card -->
-    <div style="display:flex;align-items:center;gap:1rem;background:#FFF3E0;border:1px solid #FFB74D;border-radius:10px;padding:1rem 1.25rem;">
-      <div style="font-size:2rem;flex-shrink:0;">🌐</div>
-      <div>
-        <div style="font-size:.78rem;font-weight:700;color:var(--orange);margin-bottom:.2rem;">Visit Our Website</div>
-        <a href="https://www.egcellentlifesolutions.com" target="_blank" style="font-size:.9rem;font-weight:600;color:var(--orange);text-decoration:underline;">www.egcellentlifesolutions.com</a>
-      </div>
-    </div>
-
-    <!-- Contact page link -->
-    <div style="text-align:center;padding:.5rem 0;">
-      <a href="https://egcellentlifesolutions.com/pages/contact" target="_blank"
-         style="display:inline-block;background:var(--teal);color:#fff;border-radius:8px;padding:.55rem 1.5rem;font-size:.82rem;font-weight:600;text-decoration:none;transition:background .15s;"
-         onmouseover="this.style.background='var(--teal2)'" onmouseout="this.style.background='var(--teal)'">
-        Open Contact Page ↗
-      </a>
-    </div>
-
   </div>
 </div>
 </div>
@@ -1175,11 +1128,10 @@ function calcPNP(){
 }
 
 function switchTop(t){
- document.querySelectorAll('.nav-tab').forEach((el,i)=>el.classList.toggle('active',['ee','pnp','pp','contact'][i]===t));
+ document.querySelectorAll('.nav-tab').forEach((el,i)=>el.classList.toggle('active',['ee','pnp','pp'][i]===t));
  $('panel-pnp').classList.toggle('active',t==='pnp');
  $('panel-ee').classList.toggle('active',t==='ee');
  $('panel-pp').classList.toggle('active',t==='pp');
- $('panel-contact').classList.toggle('active',t==='contact');
 }
 
 function swP(i){
